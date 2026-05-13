@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rsm:SPSCertificate xmlns:ds="http://www.w3.org/2000/09/xmldsig#" 
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+					xmlns:rsm="urn:un:unece:uncefact:data:standard:SPSCertificate:17" 
+					xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:21" 
+					xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:21" 
+					xsi:schemaLocation="urn:un:unece:uncefact:data:standard:SPSCertificate:17 ../../Certificado%20fitosanitario%20de%20exportaci%C3%B3n/Certificado%20fitosanitario%20de%20exportaci%C3%B3n%20(XSD-Validaciones)/data/standard/SPSCertificate_17p0.xsd">
+	<rsm:SPSExchangedDocument>
+		<ram:ID>491412333BO</ram:ID>
+		<ram:TypeCode>851</ram:TypeCode>
+		<ram:StatusCode>70</ram:StatusCode>
+		<ram:IssueDateTime>
+			<udt:DateTimeString>2025-07-14T10:05:11Z</udt:DateTimeString>
+		</ram:IssueDateTime>
+		<ram:IssuerSPSParty>
+			<ram:Name>Servicio Nacional Agropecuario e Inocuidad Alimentaria</ram:Name>
+		</ram:IssuerSPSParty>
+		<ram:IncludedSPSNote>
+			<ram:Subject>SPSFL</ram:Subject>
+			<ram:Content>5</ram:Content>
+		</ram:IncludedSPSNote>
+		<ram:SignatorySPSAuthentication>
+			<ram:IssueSPSLocation>
+				<ram:Name>Santa Cruz</ram:Name>
+			</ram:IssueSPSLocation>
+			<ram:ProviderSPSParty>
+				<ram:SpecifiedSPSPerson>
+					<ram:Name>Carmiña Cecilia Rioja Montero</ram:Name>
+				</ram:SpecifiedSPSPerson>
+			</ram:ProviderSPSParty>
+			<ram:IncludedSPSClause>
+				<ram:ID>1</ram:ID>
+			</ram:IncludedSPSClause>
+		</ram:SignatorySPSAuthentication>
+	</rsm:SPSExchangedDocument>
+	<rsm:SPSConsignment>
+		<ram:ConsignorSPSParty>
+			<ram:Name>TEST PRODUCTOS FUNCIONALES DELAGRO SRL QA</ram:Name>
+			<ram:SpecifiedSPSAddress>
+				<ram:LineOne>CARRETERA A LA PAZ KM. 1  ZONA NORTE, URB. LA AURORA ORURO Roberto Leon Campos</ram:LineOne>
+			</ram:SpecifiedSPSAddress>
+		</ram:ConsignorSPSParty>
+		<ram:ConsigneeSPSParty>
+			<ram:Name>IMPORTADORA ECUADOR</ram:Name>
+			<ram:SpecifiedSPSAddress>
+				<ram:LineOne>Guayaquil</ram:LineOne>
+			</ram:SpecifiedSPSAddress>
+		</ram:ConsigneeSPSParty>
+		<ram:ExportSPSCountry>
+			<ram:ID>BO</ram:ID>
+		</ram:ExportSPSCountry>
+		<ram:ImportSPSCountry>
+			<ram:ID>EC</ram:ID>
+		</ram:ImportSPSCountry>
+		<ram:UnloadingBaseportSPSLocation>
+			<ram:Name>desaguadero</ram:Name>
+		</ram:UnloadingBaseportSPSLocation>
+		<ram:ExaminationSPSEvent>
+			<ram:OccurrenceSPSLocation>
+				<ram:Name>sin dato</ram:Name>
+			</ram:OccurrenceSPSLocation>
+		</ram:ExaminationSPSEvent>
+		<ram:MainCarriageSPSTransportMovement>
+			<ram:ModeCode>6</ram:ModeCode>
+			<ram:UsedSPSTransportMeans>
+				<ram:Name>Sin Dato</ram:Name>
+			</ram:UsedSPSTransportMeans>
+		</ram:MainCarriageSPSTransportMovement>
+		<ram:IncludedSPSConsignmentItem>
+			<ram:IncludedSPSTradeLineItem>
+				<ram:SequenceNumeric>1</ram:SequenceNumeric>
+				<ram:Description>Algarrobo (Decking)</ram:Description>
+				<ram:CommonName>Algarrobo</ram:CommonName>
+				<ram:ScientificName>Algarrobo</ram:ScientificName>
+				<ram:IntendedUse>Consumo Humano</ram:IntendedUse>
+				<ram:NetWeightMeasure unitCode="KGM">10.00</ram:NetWeightMeasure>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>OPTND</ram:Subject>
+					<ram:Content>1 saco</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>DMTLIL</ram:Subject>
+					<ram:Content>Algarrobo Chaqueño</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>ADTLIL</ram:Subject>
+					<ram:Content>SIN DECLARACIÓN ADICIONAL</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>ADDITLIL</ram:Subject>
+					<ram:Content>2025-07-14T12:36:07Z</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:OriginSPSCountry>
+					<ram:ID>BO</ram:ID>
+					<ram:Name>Estado Plurinacional de Bolivia</ram:Name>
+					<ram:SubordinateSPSCountrySubDivision>
+						<ram:Name>Santa Cruz</ram:Name>
+					</ram:SubordinateSPSCountrySubDivision>
+				</ram:OriginSPSCountry>
+				<ram:AppliedSPSProcess>
+					<ram:TypeCode>ZZZ</ram:TypeCode>
+					<ram:ApplicableSPSProcessCharacteristic>
+						<ram:Description>TTFT</ram:Description>
+						<ram:Description>ningunoningunoningunoningunoninguno</ram:Description>
+					</ram:ApplicableSPSProcessCharacteristic>
+				</ram:AppliedSPSProcess>
+			</ram:IncludedSPSTradeLineItem>
+		</ram:IncludedSPSConsignmentItem>
+	</rsm:SPSConsignment>
+</rsm:SPSCertificate>

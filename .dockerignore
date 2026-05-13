@@ -1,0 +1,7 @@
+.git
+node_modules
+vendor
+tests
+storage/logs
+storage/public
+docker

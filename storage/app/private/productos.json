@@ -1,0 +1,884 @@
+{
+    "3128": [
+        {
+            "productos_operador": {
+                "productos": [
+                    {
+                        "duracion": null,
+                        "peso_neto": 9180,
+                        "codigo_poa": null,
+                        "peso_bruto": 9486,
+                        "id_duracion": null,
+                        "id_producto": 2176,
+                        "temperatura": null,
+                        "concentracion": null,
+                        "id_temperatura": null,
+                        "id_tratamiento": null,
+                        "nombre_producto": "plátano",
+                        "fecha_inspeccion": "2023-08-14T00:00:00Z",
+                        "id_concentracion": null,
+                        "producto_quimico": null,
+                        "fecha_tratamiento": null,
+                        "cantidad_comercial": 306,
+                        "codigo_tratamiento": null,
+                        "id_subtipo_producto": 24,
+                        "id_tipo_tratamiento": null,
+                        "id_unidad_peso_neto": 55,
+                        "id_unidad_peso_bruto": 55,
+                        "codigo_unidad_duracion": null,
+                        "codigo_tipo_tratamiento": null,
+                        "codigo_unidad_peso_neto": "KGM",
+                        "nombre_subtipo_producto": "Fruta",
+                        "codigo_unidad_peso_bruto": "KGM",
+                        "identificador_exportador": "0401127808001",
+                        "codigo_unidad_temperatura": null,
+                        "codigo_unidad_concentracion": null,
+                        "id_certificado_fitosanitario": 3128,
+                        "id_unidad_cantidad_comercial": 33,
+                        "codigo_unidad_cantidad_comercial": "BX",
+                        "id_total_inspeccion_fitosanitaria": 8348,
+                        "id_certificado_fitosanitario_producto": 3562
+                    }
+                ],
+                "datos_operador": {
+                    "nombre_operador": "PASPUEL CASTILLO SANTIAGO XAVIER",
+                    "direccion_operador": "N12A Matovelle OE3-65 Oe4 y Venezuela",
+                    "identificador_operador": "0401127808001"
+                }
+            }
+        }
+    ],
+    "3310": [
+        {
+            "productos_operador": {
+                "productos": [
+                    {
+                        "duracion": null,
+                        "peso_neto": 151.77,
+                        "codigo_poa": null,
+                        "peso_bruto": null,
+                        "id_duracion": null,
+                        "id_producto": 22492,
+                        "temperatura": null,
+                        "concentracion": null,
+                        "id_temperatura": null,
+                        "id_tratamiento": null,
+                        "nombre_producto": "palma africana",
+                        "fecha_inspeccion": "2023-08-10T00:00:00Z",
+                        "id_concentracion": null,
+                        "producto_quimico": null,
+                        "fecha_tratamiento": null,
+                        "cantidad_comercial": 9,
+                        "codigo_tratamiento": null,
+                        "id_subtipo_producto": 629,
+                        "id_tipo_tratamiento": null,
+                        "id_unidad_peso_neto": 55,
+                        "id_unidad_peso_bruto": null,
+                        "codigo_unidad_duracion": null,
+                        "codigo_tipo_tratamiento": null,
+                        "codigo_unidad_peso_neto": "KGM",
+                        "nombre_subtipo_producto": "Semilla pregerminada",
+                        "codigo_unidad_peso_bruto": null,
+                        "identificador_exportador": "1790036227001",
+                        "codigo_unidad_temperatura": null,
+                        "codigo_unidad_concentracion": null,
+                        "id_certificado_fitosanitario": 3310,
+                        "id_unidad_cantidad_comercial": 33,
+                        "codigo_unidad_cantidad_comercial": "BX",
+                        "id_total_inspeccion_fitosanitaria": 7538,
+                        "id_certificado_fitosanitario_producto": 3802
+                    }
+                ],
+                "datos_operador": {
+                    "nombre_operador": "MURRIN CORPORATION",
+                    "direccion_operador": "AV. DEL RANCHO #110 URB. RANCHO SAN FRANCISCO",
+                    "identificador_operador": "1790036227001"
+                }
+            }
+        }
+    ],
+    "3529": [
+        {
+            "productos_operador": {
+                "productos": [
+                    {
+                        "duracion": 3,
+                        "peso_neto": 32000,
+                        "codigo_poa": null,
+                        "peso_bruto": 32000,
+                        "id_duracion": 91,
+                        "id_producto": 28305,
+                        "temperatura": 21,
+                        "concentracion": 5,
+                        "id_temperatura": 17,
+                        "id_tratamiento": 17,
+                        "nombre_producto": "pino",
+                        "fecha_inspeccion": "2023-08-04T00:00:00Z",
+                        "id_concentracion": 15,
+                        "producto_quimico": "PROFENOSOS/FIPRONIL/PROPICONAZOLE",
+                        "fecha_tratamiento": "2023-08-03T00:00:00Z",
+                        "cantidad_comercial": 32,
+                        "codigo_tratamiento": "IM",
+                        "id_subtipo_producto": 890,
+                        "id_tipo_tratamiento": 7,
+                        "id_unidad_peso_neto": 55,
+                        "id_unidad_peso_bruto": 55,
+                        "codigo_unidad_duracion": "HUR",
+                        "codigo_tipo_tratamiento": "CHT",
+                        "codigo_unidad_peso_neto": "KGM",
+                        "nombre_subtipo_producto": "Aserrada impregnada",
+                        "codigo_unidad_peso_bruto": "KGM",
+                        "identificador_exportador": "0791841774001",
+                        "codigo_unidad_temperatura": "CEL",
+                        "codigo_unidad_concentracion": "PER",
+                        "id_certificado_fitosanitario": 3529,
+                        "id_unidad_cantidad_comercial": 62,
+                        "codigo_unidad_cantidad_comercial": "MTQ",
+                        "id_total_inspeccion_fitosanitaria": 8977,
+                        "id_certificado_fitosanitario_producto": 4121
+                    }
+                ],
+                "datos_operador": {
+                    "nombre_operador": "ECUA PERU S.A.S.",
+                    "direccion_operador": "AV. PANAMERICANA KM 1 VIA PUENTE INTERNACIONAL MACARÁ",
+                    "identificador_operador": "0791841774001"
+                }
+            }
+        }
+    ],
+    "3742": [
+        {
+            "productos_operador": {
+                "productos": [
+                    {
+                        "duracion": 1,
+                        "peso_neto": 11250,
+                        "codigo_poa": null,
+                        "peso_bruto": 11250,
+                        "id_duracion": 91,
+                        "id_producto": 16653,
+                        "temperatura": 23,
+                        "concentracion": 0.2,
+                        "id_temperatura": 17,
+                        "id_tratamiento": 15,
+                        "nombre_producto": "banano",
+                        "fecha_inspeccion": "2023-08-16T00:00:00Z",
+                        "id_concentracion": 1,
+                        "producto_quimico": "THIABENDAZOLE",
+                        "fecha_tratamiento": "2023-08-14T00:00:00Z",
+                        "cantidad_comercial": 450,
+                        "codigo_tratamiento": "FU",
+                        "id_subtipo_producto": 24,
+                        "id_tipo_tratamiento": 7,
+                        "id_unidad_peso_neto": 55,
+                        "id_unidad_peso_bruto": 55,
+                        "codigo_unidad_duracion": "HUR",
+                        "codigo_tipo_tratamiento": "CHT",
+                        "codigo_unidad_peso_neto": "KGM",
+                        "nombre_subtipo_producto": "Fruta",
+                        "codigo_unidad_peso_bruto": "KGM",
+                        "identificador_exportador": "0993381089001",
+                        "codigo_unidad_temperatura": "CEL",
+                        "codigo_unidad_concentracion": "CGL",
+                        "id_certificado_fitosanitario": 3742,
+                        "id_unidad_cantidad_comercial": 32,
+                        "codigo_unidad_cantidad_comercial": "OQU",
+                        "id_total_inspeccion_fitosanitaria": 8999,
+                        "id_certificado_fitosanitario_producto": 4377
+                    }
+                ],
+                "datos_operador": {
+                    "nombre_operador": "FOODSOL S.A.",
+                    "direccion_operador": "CDLA ABEL GILBERT-SOLAR18-MANZANA A18 REFERENCIA A 12 METROS DE EMPRESA BIOMAR",
+                    "identificador_operador": "0993381089001"
+                }
+            }
+        }
+    ],
+    "4074": [
+        {
+            "productos_operador": {
+                "productos": [
+                    {
+                        "duracion": null,
+                        "peso_neto": 54868,
+                        "codigo_poa": null,
+                        "peso_bruto": 57362,
+                        "id_duracion": null,
+                        "id_producto": 329,
+                        "temperatura": null,
+                        "concentracion": null,
+                        "id_temperatura": null,
+                        "id_tratamiento": null,
+                        "nombre_producto": "orito",
+                        "fecha_inspeccion": "2023-08-21T00:00:00Z",
+                        "id_concentracion": null,
+                        "producto_quimico": null,
+                        "fecha_tratamiento": null,
+                        "cantidad_comercial": 2494,
+                        "codigo_tratamiento": null,
+                        "id_subtipo_producto": 24,
+                        "id_tipo_tratamiento": null,
+                        "id_unidad_peso_neto": 55,
+                        "id_unidad_peso_bruto": 55,
+                        "codigo_unidad_duracion": null,
+                        "codigo_tipo_tratamiento": null,
+                        "codigo_unidad_peso_neto": "KGM",
+                        "nombre_subtipo_producto": "Fruta",
+                        "codigo_unidad_peso_bruto": "KGM",
+                        "identificador_exportador": "0401127808001",
+                        "codigo_unidad_temperatura": null,
+                        "codigo_unidad_concentracion": null,
+                        "id_certificado_fitosanitario": 4074,
+                        "id_unidad_cantidad_comercial": 33,
+                        "codigo_unidad_cantidad_comercial": "BX",
+                        "id_total_inspeccion_fitosanitaria": 9918,
+                        "id_certificado_fitosanitario_producto": 4835
+                    }
+                ],
+                "datos_operador": {
+                    "nombre_operador": "PASPUEL CASTILLO SANTIAGO XAVIER",
+                    "direccion_operador": "N12A Matovelle OE3-65 Oe4 y Venezuela",
+                    "identificador_operador": "0401127808001"
+                }
+            }
+        }
+    ],
+    "4208": [
+        {
+            "productos_operador": {
+                "productos": [
+                    {
+                        "duracion": 3,
+                        "peso_neto": 32000,
+                        "codigo_poa": null,
+                        "peso_bruto": 32000,
+                        "id_duracion": 91,
+                        "id_producto": 28305,
+                        "temperatura": 21,
+                        "concentracion": 5,
+                        "id_temperatura": 17,
+                        "id_tratamiento": 17,
+                        "nombre_producto": "pino",
+                        "fecha_inspeccion": "2023-08-14T00:00:00Z",
+                        "id_concentracion": 15,
+                        "producto_quimico": "PROFENOSOS/FIPRONIL/PROPICONAZOLE",
+                        "fecha_tratamiento": "2023-08-14T00:00:00Z",
+                        "cantidad_comercial": 32,
+                        "codigo_tratamiento": "IM",
+                        "id_subtipo_producto": 890,
+                        "id_tipo_tratamiento": 7,
+                        "id_unidad_peso_neto": 55,
+                        "id_unidad_peso_bruto": 55,
+                        "codigo_unidad_duracion": "HUR",
+                        "codigo_tipo_tratamiento": "CHT",
+                        "codigo_unidad_peso_neto": "KGM",
+                        "nombre_subtipo_producto": "Aserrada impregnada",
+                        "codigo_unidad_peso_bruto": "KGM",
+                        "identificador_exportador": "0791841774001",
+                        "codigo_unidad_temperatura": "CEL",
+                        "codigo_unidad_concentracion": "PER",
+                        "id_certificado_fitosanitario": 4208,
+                        "id_unidad_cantidad_comercial": 62,
+                        "codigo_unidad_cantidad_comercial": "MTQ",
+                        "id_total_inspeccion_fitosanitaria": 9892,
+                        "id_certificado_fitosanitario_producto": 5028
+                    }
+                ],
+                "datos_operador": {
+                    "nombre_operador": "ECUA PERU S.A.S.",
+                    "direccion_operador": "AV. PANAMERICANA KM 1 VIA PUENTE INTERNACIONAL MACARÁ",
+                    "identificador_operador": "0791841774001"
+                }
+            }
+        }
+    ],
+    "4232": [
+        {
+            "productos_operador": {
+                "productos": [
+                    {
+                        "duracion": 1,
+                        "peso_neto": 16080,
+                        "codigo_poa": null,
+                        "peso_bruto": 16616,
+                        "id_duracion": 92,
+                        "id_producto": 2176,
+                        "temperatura": 23,
+                        "concentracion": 23,
+                        "id_temperatura": 17,
+                        "id_tratamiento": 17,
+                        "nombre_producto": "plátano",
+                        "fecha_inspeccion": "2023-08-22T00:00:00Z",
+                        "id_concentracion": 15,
+                        "producto_quimico": "THIABENDAZOLE",
+                        "fecha_tratamiento": "2023-08-21T00:00:00Z",
+                        "cantidad_comercial": 536,
+                        "codigo_tratamiento": "IM",
+                        "id_subtipo_producto": 24,
+                        "id_tipo_tratamiento": 7,
+                        "id_unidad_peso_neto": 55,
+                        "id_unidad_peso_bruto": 55,
+                        "codigo_unidad_duracion": "DAY",
+                        "codigo_tipo_tratamiento": "CHT",
+                        "codigo_unidad_peso_neto": "KGM",
+                        "nombre_subtipo_producto": "Fruta",
+                        "codigo_unidad_peso_bruto": "KGM",
+                        "identificador_exportador": "0401127808001",
+                        "codigo_unidad_temperatura": "CEL",
+                        "codigo_unidad_concentracion": "PER",
+                        "id_certificado_fitosanitario": 4232,
+                        "id_unidad_cantidad_comercial": 33,
+                        "codigo_unidad_cantidad_comercial": "BX",
+                        "id_total_inspeccion_fitosanitaria": 10174,
+                        "id_certificado_fitosanitario_producto": 5062
+                    }
+                ],
+                "datos_operador": {
+                    "nombre_operador": "PASPUEL CASTILLO SANTIAGO XAVIER",
+                    "direccion_operador": "N12A Matovelle OE3-65 Oe4 y Venezuela",
+                    "identificador_operador": "0401127808001"
+                }
+            }
+        }
+    ],
+    "4778": [
+        {
+            "productos_operador": {
+                "productos": [
+                    {
+                        "duracion": null,
+                        "peso_neto": 48.53,
+                        "codigo_poa": null,
+                        "peso_bruto": null,
+                        "id_duracion": null,
+                        "id_producto": 22492,
+                        "temperatura": null,
+                        "concentracion": null,
+                        "id_temperatura": null,
+                        "id_tratamiento": null,
+                        "nombre_producto": "palma africana",
+                        "fecha_inspeccion": "2023-08-21T00:00:00Z",
+                        "id_concentracion": null,
+                        "producto_quimico": null,
+                        "fecha_tratamiento": null,
+                        "cantidad_comercial": 3,
+                        "codigo_tratamiento": null,
+                        "id_subtipo_producto": 629,
+                        "id_tipo_tratamiento": null,
+                        "id_unidad_peso_neto": 55,
+                        "id_unidad_peso_bruto": null,
+                        "codigo_unidad_duracion": null,
+                        "codigo_tipo_tratamiento": null,
+                        "codigo_unidad_peso_neto": "KGM",
+                        "nombre_subtipo_producto": "Semilla pregerminada",
+                        "codigo_unidad_peso_bruto": null,
+                        "identificador_exportador": "1790036227001",
+                        "codigo_unidad_temperatura": null,
+                        "codigo_unidad_concentracion": null,
+                        "id_certificado_fitosanitario": 4778,
+                        "id_unidad_cantidad_comercial": 33,
+                        "codigo_unidad_cantidad_comercial": "BX",
+                        "id_total_inspeccion_fitosanitaria": 9906,
+                        "id_certificado_fitosanitario_producto": 5761
+                    }
+                ],
+                "datos_operador": {
+                    "nombre_operador": "MURRIN CORPORATION",
+                    "direccion_operador": "AV. DEL RANCHO #110 URB. RANCHO SAN FRANCISCO",
+                    "identificador_operador": "1790036227001"
+                }
+            }
+        }
+    ],
+    "4871": [
+        {
+            "productos_operador": {
+                "productos": [
+                    {
+                        "duracion": 1,
+                        "peso_neto": 22290,
+                        "codigo_poa": null,
+                        "peso_bruto": 23033,
+                        "id_duracion": 92,
+                        "id_producto": 2176,
+                        "temperatura": 23,
+                        "concentracion": 23,
+                        "id_temperatura": 17,
+                        "id_tratamiento": 17,
+                        "nombre_producto": "plátano",
+                        "fecha_inspeccion": "2023-08-28T00:00:00Z",
+                        "id_concentracion": 15,
+                        "producto_quimico": "THIABENDAZOLE",
+                        "fecha_tratamiento": "2023-08-27T00:00:00Z",
+                        "cantidad_comercial": 743,
+                        "codigo_tratamiento": "IM",
+                        "id_subtipo_producto": 24,
+                        "id_tipo_tratamiento": 7,
+                        "id_unidad_peso_neto": 55,
+                        "id_unidad_peso_bruto": 55,
+                        "codigo_unidad_duracion": "DAY",
+                        "codigo_tipo_tratamiento": "CHT",
+                        "codigo_unidad_peso_neto": "KGM",
+                        "nombre_subtipo_producto": "Fruta",
+                        "codigo_unidad_peso_bruto": "KGM",
+                        "identificador_exportador": "0401127808001",
+                        "codigo_unidad_temperatura": "CEL",
+                        "codigo_unidad_concentracion": "PER",
+                        "id_certificado_fitosanitario": 4871,
+                        "id_unidad_cantidad_comercial": 33,
+                        "codigo_unidad_cantidad_comercial": "BX",
+                        "id_total_inspeccion_fitosanitaria": 11439,
+                        "id_certificado_fitosanitario_producto": 5942
+                    }
+                ],
+                "datos_operador": {
+                    "nombre_operador": "PASPUEL CASTILLO SANTIAGO XAVIER",
+                    "direccion_operador": "N12A Matovelle OE3-65 Oe4 y Venezuela",
+                    "identificador_operador": "0401127808001"
+                }
+            }
+        }
+    ],
+    "4883": [
+        {
+            "productos_operador": {
+                "productos": [
+                    {
+                        "duracion": 1,
+                        "peso_neto": 40106,
+                        "codigo_poa": null,
+                        "peso_bruto": 41929,
+                        "id_duracion": 92,
+                        "id_producto": 329,
+                        "temperatura": 23,
+                        "concentracion": 23,
+                        "id_temperatura": 17,
+                        "id_tratamiento": 15,
+                        "nombre_producto": "orito",
+                        "fecha_inspeccion": "2023-08-28T00:00:00Z",
+                        "id_concentracion": 15,
+                        "producto_quimico": "DELTAMETRINA",
+                        "fecha_tratamiento": "2023-08-27T00:00:00Z",
+                        "cantidad_comercial": 1823,
+                        "codigo_tratamiento": "FU",
+                        "id_subtipo_producto": 24,
+                        "id_tipo_tratamiento": 7,
+                        "id_unidad_peso_neto": 55,
+                        "id_unidad_peso_bruto": 55,
+                        "codigo_unidad_duracion": "DAY",
+                        "codigo_tipo_tratamiento": "CHT",
+                        "codigo_unidad_peso_neto": "KGM",
+                        "nombre_subtipo_producto": "Fruta",
+                        "codigo_unidad_peso_bruto": "KGM",
+                        "identificador_exportador": "0401127808001",
+                        "codigo_unidad_temperatura": "CEL",
+                        "codigo_unidad_concentracion": "PER",
+                        "id_certificado_fitosanitario": 4883,
+                        "id_unidad_cantidad_comercial": 33,
+                        "codigo_unidad_cantidad_comercial": "BX",
+                        "id_total_inspeccion_fitosanitaria": 11478,
+                        "id_certificado_fitosanitario_producto": 5951
+                    }
+                ],
+                "datos_operador": {
+                    "nombre_operador": "PASPUEL CASTILLO SANTIAGO XAVIER",
+                    "direccion_operador": "N12A Matovelle OE3-65 Oe4 y Venezuela",
+                    "identificador_operador": "0401127808001"
+                }
+            }
+        }
+    ],
+    "5027": [
+        {
+            "productos_operador": {
+                "productos": [
+                    {
+                        "duracion": null,
+                        "peso_neto": 13600,
+                        "codigo_poa": null,
+                        "peso_bruto": 14200,
+                        "id_duracion": null,
+                        "id_producto": 16773,
+                        "temperatura": null,
+                        "concentracion": null,
+                        "id_temperatura": null,
+                        "id_tratamiento": null,
+                        "nombre_producto": "mango",
+                        "fecha_inspeccion": "2023-08-30T00:00:00Z",
+                        "id_concentracion": null,
+                        "producto_quimico": null,
+                        "fecha_tratamiento": null,
+                        "cantidad_comercial": 545,
+                        "codigo_tratamiento": null,
+                        "id_subtipo_producto": 24,
+                        "id_tipo_tratamiento": null,
+                        "id_unidad_peso_neto": 55,
+                        "id_unidad_peso_bruto": 55,
+                        "codigo_unidad_duracion": null,
+                        "codigo_tipo_tratamiento": null,
+                        "codigo_unidad_peso_neto": "KGM",
+                        "nombre_subtipo_producto": "Fruta",
+                        "codigo_unidad_peso_bruto": "KGM",
+                        "identificador_exportador": "1793189856001",
+                        "codigo_unidad_temperatura": null,
+                        "codigo_unidad_concentracion": null,
+                        "id_certificado_fitosanitario": 5027,
+                        "id_unidad_cantidad_comercial": 33,
+                        "codigo_unidad_cantidad_comercial": "BX",
+                        "id_total_inspeccion_fitosanitaria": 11805,
+                        "id_certificado_fitosanitario_producto": 6133
+                    }
+                ],
+                "datos_operador": {
+                    "nombre_operador": "EXPORTACIONES & IMPORTACIONES FRUTIEXPORTECU CIA. LTDA.",
+                    "direccion_operador": "LEONIDAS PLAZA  S107 Y UNE",
+                    "identificador_operador": "1793189856001"
+                }
+            }
+        }
+    ],
+    "5409": [
+        {
+            "productos_operador": {
+                "productos": [
+                    {
+                        "duracion": null,
+                        "peso_neto": 12500,
+                        "codigo_poa": null,
+                        "peso_bruto": 13000,
+                        "id_duracion": null,
+                        "id_producto": 16773,
+                        "temperatura": null,
+                        "concentracion": null,
+                        "id_temperatura": null,
+                        "id_tratamiento": null,
+                        "nombre_producto": "mango",
+                        "fecha_inspeccion": "2023-08-31T00:00:00Z",
+                        "id_concentracion": null,
+                        "producto_quimico": null,
+                        "fecha_tratamiento": null,
+                        "cantidad_comercial": 500,
+                        "codigo_tratamiento": null,
+                        "id_subtipo_producto": 24,
+                        "id_tipo_tratamiento": null,
+                        "id_unidad_peso_neto": 55,
+                        "id_unidad_peso_bruto": 55,
+                        "codigo_unidad_duracion": null,
+                        "codigo_tipo_tratamiento": null,
+                        "codigo_unidad_peso_neto": "KGM",
+                        "nombre_subtipo_producto": "Fruta",
+                        "codigo_unidad_peso_bruto": "KGM",
+                        "identificador_exportador": "1793189856001",
+                        "codigo_unidad_temperatura": null,
+                        "codigo_unidad_concentracion": null,
+                        "id_certificado_fitosanitario": 5409,
+                        "id_unidad_cantidad_comercial": 33,
+                        "codigo_unidad_cantidad_comercial": "BX",
+                        "id_total_inspeccion_fitosanitaria": 12140,
+                        "id_certificado_fitosanitario_producto": 6655
+                    }
+                ],
+                "datos_operador": {
+                    "nombre_operador": "EXPORTACIONES & IMPORTACIONES FRUTIEXPORTECU CIA. LTDA.",
+                    "direccion_operador": "LEONIDAS PLAZA  S107 Y UNE",
+                    "identificador_operador": "1793189856001"
+                }
+            }
+        }
+    ],
+    "5586": [
+        {
+            "productos_operador": {
+                "productos": [
+                    {
+                        "duracion": 3,
+                        "peso_neto": 32000,
+                        "codigo_poa": null,
+                        "peso_bruto": 32000,
+                        "id_duracion": 91,
+                        "id_producto": 28305,
+                        "temperatura": 21,
+                        "concentracion": 5,
+                        "id_temperatura": 17,
+                        "id_tratamiento": 17,
+                        "nombre_producto": "pino",
+                        "fecha_inspeccion": "2023-08-24T00:00:00Z",
+                        "id_concentracion": 15,
+                        "producto_quimico": "PROFENOSOS/FIPRONIL/PROPICONAZOLE",
+                        "fecha_tratamiento": "2023-08-24T00:00:00Z",
+                        "cantidad_comercial": 32,
+                        "codigo_tratamiento": "IM",
+                        "id_subtipo_producto": 890,
+                        "id_tipo_tratamiento": 7,
+                        "id_unidad_peso_neto": 55,
+                        "id_unidad_peso_bruto": 55,
+                        "codigo_unidad_duracion": "HUR",
+                        "codigo_tipo_tratamiento": "CHT",
+                        "codigo_unidad_peso_neto": "KGM",
+                        "nombre_subtipo_producto": "Aserrada impregnada",
+                        "codigo_unidad_peso_bruto": "KGM",
+                        "identificador_exportador": "0791841774001",
+                        "codigo_unidad_temperatura": "CEL",
+                        "codigo_unidad_concentracion": "PER",
+                        "id_certificado_fitosanitario": 5586,
+                        "id_unidad_cantidad_comercial": 62,
+                        "codigo_unidad_cantidad_comercial": "MTQ",
+                        "id_total_inspeccion_fitosanitaria": 10882,
+                        "id_certificado_fitosanitario_producto": 6844
+                    }
+                ],
+                "datos_operador": {
+                    "nombre_operador": "ECUA PERU S.A.S.",
+                    "direccion_operador": "AV. PANAMERICANA KM 1 VIA PUENTE INTERNACIONAL MACARÁ",
+                    "identificador_operador": "0791841774001"
+                }
+            }
+        }
+    ],
+    "5726": [
+        {
+            "productos_operador": {
+                "productos": [
+                    {
+                        "duracion": 1,
+                        "peso_neto": 19734,
+                        "codigo_poa": null,
+                        "peso_bruto": 20631,
+                        "id_duracion": 92,
+                        "id_producto": 329,
+                        "temperatura": 23,
+                        "concentracion": 23,
+                        "id_temperatura": 17,
+                        "id_tratamiento": 15,
+                        "nombre_producto": "orito",
+                        "fecha_inspeccion": "2023-09-04T00:00:00Z",
+                        "id_concentracion": 15,
+                        "producto_quimico": "DELTAMETRINA",
+                        "fecha_tratamiento": "2023-09-03T00:00:00Z",
+                        "cantidad_comercial": 897,
+                        "codigo_tratamiento": "FU",
+                        "id_subtipo_producto": 24,
+                        "id_tipo_tratamiento": 7,
+                        "id_unidad_peso_neto": 55,
+                        "id_unidad_peso_bruto": 55,
+                        "codigo_unidad_duracion": "DAY",
+                        "codigo_tipo_tratamiento": "CHT",
+                        "codigo_unidad_peso_neto": "KGM",
+                        "nombre_subtipo_producto": "Fruta",
+                        "codigo_unidad_peso_bruto": "KGM",
+                        "identificador_exportador": "0401127808001",
+                        "codigo_unidad_temperatura": "CEL",
+                        "codigo_unidad_concentracion": "PER",
+                        "id_certificado_fitosanitario": 5726,
+                        "id_unidad_cantidad_comercial": 33,
+                        "codigo_unidad_cantidad_comercial": "BX",
+                        "id_total_inspeccion_fitosanitaria": 12887,
+                        "id_certificado_fitosanitario_producto": 7078
+                    }
+                ],
+                "datos_operador": {
+                    "nombre_operador": "PASPUEL CASTILLO SANTIAGO XAVIER",
+                    "direccion_operador": "N12A Matovelle OE3-65 Oe4 y Venezuela",
+                    "identificador_operador": "0401127808001"
+                }
+            }
+        }
+    ],
+    "5730": [
+        {
+            "productos_operador": {
+                "productos": [
+                    {
+                        "duracion": null,
+                        "peso_neto": 12600,
+                        "codigo_poa": null,
+                        "peso_bruto": 13100,
+                        "id_duracion": null,
+                        "id_producto": 16773,
+                        "temperatura": null,
+                        "concentracion": null,
+                        "id_temperatura": null,
+                        "id_tratamiento": null,
+                        "nombre_producto": "mango",
+                        "fecha_inspeccion": "2023-09-05T00:00:00Z",
+                        "id_concentracion": null,
+                        "producto_quimico": null,
+                        "fecha_tratamiento": null,
+                        "cantidad_comercial": 507,
+                        "codigo_tratamiento": null,
+                        "id_subtipo_producto": 24,
+                        "id_tipo_tratamiento": null,
+                        "id_unidad_peso_neto": 55,
+                        "id_unidad_peso_bruto": 55,
+                        "codigo_unidad_duracion": null,
+                        "codigo_tipo_tratamiento": null,
+                        "codigo_unidad_peso_neto": "KGM",
+                        "nombre_subtipo_producto": "Fruta",
+                        "codigo_unidad_peso_bruto": "KGM",
+                        "identificador_exportador": "1793189856001",
+                        "codigo_unidad_temperatura": null,
+                        "codigo_unidad_concentracion": null,
+                        "id_certificado_fitosanitario": 5730,
+                        "id_unidad_cantidad_comercial": 33,
+                        "codigo_unidad_cantidad_comercial": "BX",
+                        "id_total_inspeccion_fitosanitaria": 12904,
+                        "id_certificado_fitosanitario_producto": 7104
+                    }
+                ],
+                "datos_operador": {
+                    "nombre_operador": "EXPORTACIONES & IMPORTACIONES FRUTIEXPORTECU CIA. LTDA.",
+                    "direccion_operador": "LEONIDAS PLAZA  S107 Y UNE",
+                    "identificador_operador": "1793189856001"
+                }
+            }
+        }
+    ],
+    "5869": [
+        {
+            "productos_operador": {
+                "productos": [
+                    {
+                        "duracion": null,
+                        "peso_neto": 18.24,
+                        "codigo_poa": null,
+                        "peso_bruto": null,
+                        "id_duracion": null,
+                        "id_producto": 22492,
+                        "temperatura": null,
+                        "concentracion": null,
+                        "id_temperatura": null,
+                        "id_tratamiento": null,
+                        "nombre_producto": "palma africana",
+                        "fecha_inspeccion": "2023-09-05T00:00:00Z",
+                        "id_concentracion": null,
+                        "producto_quimico": null,
+                        "fecha_tratamiento": null,
+                        "cantidad_comercial": 2,
+                        "codigo_tratamiento": null,
+                        "id_subtipo_producto": 629,
+                        "id_tipo_tratamiento": null,
+                        "id_unidad_peso_neto": 55,
+                        "id_unidad_peso_bruto": null,
+                        "codigo_unidad_duracion": null,
+                        "codigo_tipo_tratamiento": null,
+                        "codigo_unidad_peso_neto": "KGM",
+                        "nombre_subtipo_producto": "Semilla pregerminada",
+                        "codigo_unidad_peso_bruto": null,
+                        "identificador_exportador": "1790036227001",
+                        "codigo_unidad_temperatura": null,
+                        "codigo_unidad_concentracion": null,
+                        "id_certificado_fitosanitario": 5869,
+                        "id_unidad_cantidad_comercial": 33,
+                        "codigo_unidad_cantidad_comercial": "BX",
+                        "id_total_inspeccion_fitosanitaria": 13065,
+                        "id_certificado_fitosanitario_producto": 7285
+                    }
+                ],
+                "datos_operador": {
+                    "nombre_operador": "MURRIN CORPORATION",
+                    "direccion_operador": "AV. DEL RANCHO #110 URB. RANCHO SAN FRANCISCO",
+                    "identificador_operador": "1790036227001"
+                }
+            }
+        }
+    ],
+    "6110": [
+        {
+            "productos_operador": {
+                "productos": [
+                    {
+                        "duracion": null,
+                        "peso_neto": 34000,
+                        "codigo_poa": null,
+                        "peso_bruto": null,
+                        "id_duracion": null,
+                        "id_producto": 105,
+                        "temperatura": null,
+                        "concentracion": null,
+                        "id_temperatura": null,
+                        "id_tratamiento": null,
+                        "nombre_producto": "caña guadua",
+                        "fecha_inspeccion": "2023-09-08T00:00:00Z",
+                        "id_concentracion": null,
+                        "producto_quimico": null,
+                        "fecha_tratamiento": null,
+                        "cantidad_comercial": 1200,
+                        "codigo_tratamiento": null,
+                        "id_subtipo_producto": 47,
+                        "id_tipo_tratamiento": null,
+                        "id_unidad_peso_neto": 55,
+                        "id_unidad_peso_bruto": null,
+                        "codigo_unidad_duracion": null,
+                        "codigo_tipo_tratamiento": null,
+                        "codigo_unidad_peso_neto": "KGM",
+                        "nombre_subtipo_producto": "Madera",
+                        "codigo_unidad_peso_bruto": null,
+                        "identificador_exportador": "0701641748001",
+                        "codigo_unidad_temperatura": null,
+                        "codigo_unidad_concentracion": null,
+                        "id_certificado_fitosanitario": 6110,
+                        "id_unidad_cantidad_comercial": 87,
+                        "codigo_unidad_cantidad_comercial": "OQU",
+                        "id_total_inspeccion_fitosanitaria": 13785,
+                        "id_certificado_fitosanitario_producto": 7624
+                    }
+                ],
+                "datos_operador": {
+                    "nombre_operador": "GANAZHAPA RUIZ JUAN ANTONIO",
+                    "direccion_operador": "CALLE BATALLON CAYAMBE S/N Y TRANSVERSAL1 A 100 METROS DE LA CASA COMUNAL DEL BOSQUE",
+                    "identificador_operador": "0701641748001"
+                }
+            }
+        }
+    ],
+    "6600": [
+        {
+            "productos_operador": {
+                "productos": [
+                    {
+                        "duracion": null,
+                        "peso_neto": 10,
+                        "codigo_poa": null,
+                        "peso_bruto": 10,
+                        "id_duracion": null,
+                        "id_producto": 16642,
+                        "temperatura": null,
+                        "concentracion": null,
+                        "id_temperatura": null,
+                        "id_tratamiento": null,
+                        "nombre_producto": "arroz",
+                        "fecha_inspeccion": "2024-03-20T00:00:00Z",
+                        "id_concentracion": null,
+                        "producto_quimico": null,
+                        "fecha_tratamiento": null,
+                        "cantidad_comercial": 10,
+                        "codigo_tratamiento": null,
+                        "id_subtipo_producto": 29,
+                        "id_tipo_tratamiento": null,
+                        "id_unidad_peso_neto": 55,
+                        "id_unidad_peso_bruto": 55,
+                        "codigo_unidad_duracion": null,
+                        "codigo_tipo_tratamiento": null,
+                        "codigo_unidad_peso_neto": "KGM",
+                        "nombre_subtipo_producto": "Grano",
+                        "codigo_unidad_peso_bruto": "KGM",
+                        "identificador_exportador": "0400971214001",
+                        "codigo_unidad_temperatura": null,
+                        "codigo_unidad_concentracion": null,
+                        "id_certificado_fitosanitario": 6600,
+                        "id_unidad_cantidad_comercial": 76,
+                        "codigo_unidad_cantidad_comercial": "TT",
+                        "id_total_inspeccion_fitosanitaria": 14380,
+                        "id_certificado_fitosanitario_producto": 8194
+                    }
+                ],
+                "datos_operador": {
+                    "nombre_operador": "CUASPUD BUITRAGO ROSA MARLENE",
+                    "direccion_operador": "CALLE BOMBONA Y BELEN  A UNA CUADRA DE LA IGLESIA INMACULADA",
+                    "identificador_operador": "0400971214001"
+                }
+            }
+        }
+    ]
+}

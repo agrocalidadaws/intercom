@@ -1,0 +1,30 @@
+{
+    "name": "sgcan/intercom",
+    "description": "",
+    "authors": [
+        {
+            "name": "Eber Coaquira",
+            "email": "ebrjose@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Intercom\\": "app/",
+            "Modules\\Intercom\\Database\\Factories\\": "database/factories/",
+            "Modules\\Intercom\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Intercom\\Tests\\": "tests/"
+        }
+    }
+}

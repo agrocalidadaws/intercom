@@ -1,0 +1,49 @@
+[
+    {
+        "productos_operador": {
+            "productos": [
+                {
+                    "duracion": 3,
+                    "peso_neto": 32000,
+                    "codigo_poa": null,
+                    "peso_bruto": 32000,
+                    "id_duracion": 91,
+                    "id_producto": 28305,
+                    "temperatura": 21,
+                    "concentracion": 5,
+                    "id_temperatura": 17,
+                    "id_tratamiento": 17,
+                    "nombre_producto": "pino",
+                    "fecha_inspeccion": "2023-08-04T00:00:00Z",
+                    "id_concentracion": 15,
+                    "producto_quimico": "PROFENOSOS/FIPRONIL/PROPICONAZOLE",
+                    "fecha_tratamiento": "2023-08-03T00:00:00Z",
+                    "cantidad_comercial": 32,
+                    "codigo_tratamiento": "IM",
+                    "id_subtipo_producto": 890,
+                    "id_tipo_tratamiento": 7,
+                    "id_unidad_peso_neto": 55,
+                    "id_unidad_peso_bruto": 55,
+                    "codigo_unidad_duracion": "HUR",
+                    "codigo_tipo_tratamiento": "CHT",
+                    "codigo_unidad_peso_neto": "KGM",
+                    "nombre_subtipo_producto": "Aserrada impregnada",
+                    "codigo_unidad_peso_bruto": "KGM",
+                    "identificador_exportador": "0791841774001",
+                    "codigo_unidad_temperatura": "CEL",
+                    "codigo_unidad_concentracion": "PER",
+                    "id_certificado_fitosanitario": 3529,
+                    "id_unidad_cantidad_comercial": 62,
+                    "codigo_unidad_cantidad_comercial": "MTQ",
+                    "id_total_inspeccion_fitosanitaria": 8977,
+                    "id_certificado_fitosanitario_producto": 4121
+                }
+            ],
+            "datos_operador": {
+                "nombre_operador": "ECUA PERU S.A.S.",
+                "direccion_operador": "AV. PANAMERICANA KM 1 VIA PUENTE INTERNACIONAL MACARÁ",
+                "identificador_operador": "0791841774001"
+            }
+        }
+    }
+]

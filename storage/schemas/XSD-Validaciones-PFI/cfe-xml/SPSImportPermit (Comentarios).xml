@@ -1,0 +1,191 @@
+<rsm:SPSImportPermit xmlns:ds="http://www.w3.org/2000/09/xmldsig#" 
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                    xmlns:rsm="urn:sgcan:intercom:data:standard:SPSImportPermit:1" 
+                    xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:21" 
+                    xmlns:ram="urn:sgcan:intercom:data:standard:INTERCOMSPSImportPermitReusableAggregateBusinessInformationEntity:1">
+    <rsm:SPSExchangedDocument>
+        <!--Número de permiso-->
+        <ram:ID>57223BO</ram:ID>
+        <!--Estado y fecha de cambio de estado-->
+        <ram:StatusCode>70</ram:StatusCode>
+        <ram:IssueDateTime>
+            <udt:DateTimeString>2001-12-17T09:30:47Z</udt:DateTimeString>
+        </ram:IssueDateTime>
+        <!--Días de vigencia-->
+        <ram:EffectiveDateTime>
+            <udt:DateTimeString format="804">72</udt:DateTimeString>
+        </ram:EffectiveDateTime>
+        <ram:IssuerSPSParty>
+            <!--Nombre de la Organización de Protección Fitosanitaria-->
+            <ram:Name>Fitosanitarios S.A.</ram:Name>
+            <ram:SpecifiedSPSPerson>
+                <!--Nombre del funcionario autorizado-->
+                <ram:Name>Juan Pérez</ram:Name>
+            </ram:SpecifiedSPSPerson>
+        </ram:IssuerSPSParty>
+        <!--Marcas distintivas-->
+        <ram:IncludedSPSNote>
+            <ram:Subject>DMCL</ram:Subject>
+            <ram:Content>8888</ram:Content>
+        </ram:IncludedSPSNote>
+        <!--Adjunto del permiso de Importación-->
+        <ram:ReferenceSPSReferencedDocument>
+            <!--Fecha de emisión-->
+            <ram:IssueDateTime>
+                <udt:DateTimeString>2001-12-17T09:30:47Z</udt:DateTimeString>
+            </ram:IssueDateTime>
+            <!--AWR: La referencia original de un documento | ZZZ: Número basado en el acuerdo de las partes-->
+            <ram:RelationshipTypeCode>AAA</ram:RelationshipTypeCode>
+            <!--País de Importación Número del Certificado Fitosanitario original y/o el vigente para anexos que no sean el Certificado Original-->
+            <ram:ID>US</ram:ID>
+            <!--Adjunto (binario) – .jpg, .gif, .png, .pdf-->
+            <ram:AttachmentBinaryObject>UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</ram:AttachmentBinaryObject>
+            <!--Especificar la descripción del documento-->
+            <ram:Information>1</ram:Information>
+        </ram:ReferenceSPSReferencedDocument>
+        <ram:SignatorySPSAuthentication>
+            <ram:IssueSPSLocation>
+                <!--Lugar de emisión-->
+                <ram:Name>Bogotá</ram:Name>
+            </ram:IssueSPSLocation>
+        </ram:SignatorySPSAuthentication>
+    </rsm:SPSExchangedDocument>
+    <rsm:SPSConsignment>
+        <!--Consignatario-->
+        <ram:ConsigneeSPSParty>
+            <!--Nombre del consignatario declarado-->
+            <ram:Name>Importaciones López</ram:Name>
+            <!--Dirección del consignatario declarado-->
+            <ram:SpecifiedSPSAddress>
+                <ram:LineOne>Calle 123</ram:LineOne>
+                <ram:LineTwo>Colonia Centro</ram:LineTwo>
+                <ram:LineThree>Bogotá</ram:LineThree>
+                <ram:LineFour>Colombia</ram:LineFour>
+                <ram:LineFive>CP 110111</ram:LineFive>
+            </ram:SpecifiedSPSAddress>
+        </ram:ConsigneeSPSParty>
+        <ram:UtilizedSPSTransportEquipment>
+            <!--Número del sello-->
+            <ram:AffixedSPSSeal>
+                <ram:ID>ABC123</ram:ID>
+            </ram:AffixedSPSSeal>
+        </ram:UtilizedSPSTransportEquipment>
+        <!--Consignador-->
+        <ram:ConsignorSPSParty>
+            <!--Nombre del Exportador-->
+            <ram:Name>Exportaciones Rodríguez</ram:Name>
+            <!--Dirección del Exportador-->
+            <ram:SpecifiedSPSAddress>
+                <ram:LineOne>Av. Principal</ram:LineOne>
+                <ram:LineTwo>Colonia Industrial</ram:LineTwo>
+                <ram:LineThree>Quito</ram:LineThree>
+                <ram:LineFour>Ecuador</ram:LineFour>
+                <ram:LineFive>CP 050505</ram:LineFive>
+            </ram:SpecifiedSPSAddress>
+        </ram:ConsignorSPSParty>
+        <!--Punto de entrada declarado-->
+        <ram:UnloadingBaseportSPSLocation>
+            <!--El uso de la identificación es opcional y debe contener la referencia UN/LOCODE a la ubicación-->
+            <ram:ID>COBOG</ram:ID>
+            <!--El nombre los detalles de la ubicación-->
+            <ram:Name>Puerto de Bogotá</ram:Name>
+        </ram:UnloadingBaseportSPSLocation>
+        <!--Punto de salida declarado-->
+        <ram:LoadingBaseportSPSLocation>
+            <!--El uso de la identificación es opcional y debe contener la referencia UN/LOCODE a la ubicación-->
+            <ram:ID>QTEC</ram:ID>
+            <!--El nombre los detalles de la ubicación-->
+            <ram:Name>Puerto de Quito</ram:Name>
+        </ram:LoadingBaseportSPSLocation>
+        <!--Medios de transporte declarados-->
+        <ram:MainCarriageSPSTransportMovement>
+            <!--Detalles del transporte-->
+            <ram:ID>123ABC</ram:ID>
+            <!--Modo de transporte-->
+            <ram:ModeCode>7</ram:ModeCode>
+            <ram:UsedSPSTransportMeans>
+            <!--Nombre del transportista o transporte-->
+                <ram:Name>AirCargoExpress</ram:Name>
+            </ram:UsedSPSTransportMeans>
+        </ram:MainCarriageSPSTransportMovement>
+        <ram:IncludedSPSConsignmentItem>
+            <ram:IncludedSPSTradeLineItem>
+                <!--Descripción de la mercancía-->
+                <ram:Description>Maíz Amarillo</ram:Description>
+                <!--Nombre común-->
+                <ram:CommonName>Maíz</ram:CommonName>
+                <!--Nombre botánico de las plantas-->
+                <ram:ScientificName>Zea mays</ram:ScientificName>
+                <!--Clase de producto de la IPPC: Intención de uso-->
+                <ram:IntendedUse>Alimentación Animal</ram:IntendedUse>
+                <!--Peso neto-->
+                <ram:NetWeightMeasure>1000</ram:NetWeightMeasure>
+                <!--Peso bruto-->
+                <ram:GrossWeightMeasure>1050</ram:GrossWeightMeasure>
+                <!--Volumen neto-->
+                <ram:NetVolumeMeasure>10</ram:NetVolumeMeasure>
+                <!--Volúmen bruto-->
+                <ram:GrossVolumeMeasure>12</ram:GrossVolumeMeasure>
+                <!--Numero y descripcion de paquetes-->
+                <ram:AdditionalInformationSPSNote>
+                    <ram:Subject>OPTND</ram:Subject>
+                    <ram:Content>100 Bags of 20 Cardboard Boxes</ram:Content>
+                </ram:AdditionalInformationSPSNote>
+                <!--Otra cantidad-->
+                <ram:AdditionalInformationSPSNote>
+                    <!--Otra unidad de cantidad-->
+                    <ram:Subject>OQV</ram:Subject>
+                    <ram:Content>8</ram:Content>
+                </ram:AdditionalInformationSPSNote>
+                <ram:AdditionalInformationSPSNote>
+                    <!--Otro valor de cantidad-->
+                    <ram:Subject>OQU</ram:Subject>
+                    <ram:Content>Packets</ram:Content>
+                </ram:AdditionalInformationSPSNote>
+                <!--Requisitos fitosanitarios-->
+                <ram:AdditionalInformationSPSNote>
+                    <ram:Content>Cumple con los requisitos fitosanitarios de importación</ram:Content>
+                </ram:AdditionalInformationSPSNote>
+                <!--Observaciones-->
+                <ram:AdditionalInformationSPSNote>
+                    <ram:Content>Observaciones dentro del documento de importación</ram:Content>
+                </ram:AdditionalInformationSPSNote>
+                <!--Sistema Armonizado de Aduanas-->
+                <ram:ApplicableSPSClassification>
+                    <ram:SystemName>HS</ram:SystemName>
+                    <ram:ClassCode>100590</ram:ClassCode>
+                </ram:ApplicableSPSClassification>
+                <!--Clase de producto IPPC – Parte vegetal-->
+                <ram:ApplicableSPSClassification>
+                    <ram:SystemName>IPPCPCVP</ram:SystemName>
+                    <ram:ClassName>Grains</ram:ClassName>
+                </ram:ApplicableSPSClassification>
+                <!--Clase de producto de la IPPC - Condición-->
+                <ram:ApplicableSPSClassification>
+                    <ram:SystemName>IPPCPCC</ram:SystemName>
+                    <ram:ClassName>Dry</ram:ClassName>
+                </ram:ApplicableSPSClassification>
+                <!--Numero y descripcion de paquetes-->
+                <ram:PhysicalSPSPackage>
+                    <!--Utilice el código de nivel para describir el embalaje-->
+                    <ram:LevelCode>0</ram:LevelCode>
+                    <!--Tipo de paquete-->
+                    <ram:TypeCode>43</ram:TypeCode>
+                    <!--Numero de paquetes-->
+                    <ram:ItemQuantity>100</ram:ItemQuantity>
+                </ram:PhysicalSPSPackage>
+                <!--País de procedencia o reexportador-->
+                <ram:OriginSPSCountry>
+                    <!--País de procedencia o reexportador-->
+                    <ram:ID>EC</ram:ID>
+                    <!--Nombre del pais origen-->
+                    <ram:Name>Ecuador</ram:Name>
+                    <!--Nombre de la zona dentro del pais origen-->
+                    <ram:SubordinateSPSCountrySubDivision>
+                        <ram:Name>Quito</ram:Name>
+                    </ram:SubordinateSPSCountrySubDivision>
+                </ram:OriginSPSCountry>
+            </ram:IncludedSPSTradeLineItem>
+        </ram:IncludedSPSConsignmentItem>
+    </rsm:SPSConsignment>
+</rsm:SPSImportPermit>

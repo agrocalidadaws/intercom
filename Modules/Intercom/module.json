@@ -1,0 +1,11 @@
+{
+    "name": "Intercom",
+    "alias": "intercom",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Intercom\\Providers\\IntercomServiceProvider"
+    ],
+    "files": []
+}

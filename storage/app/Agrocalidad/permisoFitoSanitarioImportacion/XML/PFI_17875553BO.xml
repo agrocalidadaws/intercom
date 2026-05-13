@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rsm:SPSImportPermit xmlns:ds="http://www.w3.org/2000/09/xmldsig#" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:rsm="urn:sgcan:intercom:data:standard:SPSImportPermit:1" 
+xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:21" 
+xmlns:ram="urn:sgcan:intercom:data:standard:INTERCOMSPSImportPermitReusableAggregateBusinessInformationEntity:1">
+	<rsm:SPSExchangedDocument>
+		<ram:ID>17875553BO</ram:ID>
+		<ram:StatusCode>70</ram:StatusCode>
+		<ram:IssueDateTime>
+			<udt:DateTimeString>2025-07-14T00:00:00Z</udt:DateTimeString>
+		</ram:IssueDateTime>
+		<ram:EffectiveDateTime>
+			<udt:DateTimeString format="804">72</udt:DateTimeString>
+		</ram:EffectiveDateTime>
+		<ram:IssuerSPSParty>
+			<ram:Name>PEDRO LOPEZ MAMANI</ram:Name>
+			<ram:SpecifiedSPSPerson>
+				<ram:Name>Erick Cruz Vargas</ram:Name>
+			</ram:SpecifiedSPSPerson>
+		</ram:IssuerSPSParty>
+		<ram:IncludedSPSNote>
+			<ram:Subject>DMCL</ram:Subject>
+			<ram:Content>8888</ram:Content>
+		</ram:IncludedSPSNote>
+		<ram:ReferenceSPSReferencedDocument>
+            <ram:IssueDateTime>
+                <udt:DateTimeString>2001-12-17T09:30:47Z</udt:DateTimeString>
+            </ram:IssueDateTime>
+            <ram:TypeCode>2</ram:TypeCode>
+            <ram:ID>US</ram:ID>
+            <ram:AttachmentBinaryObject>UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</ram:AttachmentBinaryObject>
+            <ram:Information>1</ram:Information>
+        </ram:ReferenceSPSReferencedDocument>
+		<ram:SignatorySPSAuthentication>
+			<ram:IssueSPSLocation>
+				<ram:Name>SCZ</ram:Name>
+			</ram:IssueSPSLocation>
+		</ram:SignatorySPSAuthentication>
+	</rsm:SPSExchangedDocument>
+	<rsm:SPSConsignment>
+		<ram:ConsigneeSPSParty>
+			<ram:Name>&quot;SUMAJ YAPAY S.R.L.&quot;</ram:Name>
+			<ram:SpecifiedSPSAddress>
+				<ram:LineOne>quito</ram:LineOne>
+			</ram:SpecifiedSPSAddress>
+		</ram:ConsigneeSPSParty>
+		<ram:ConsignorSPSParty>
+			<ram:Name>PEDRO LOPEZ MAMANI</ram:Name>
+			<ram:SpecifiedSPSAddress>
+				<ram:LineOne>Ayacucho Nº 366 entre Pagador y Potosi Oruro</ram:LineOne>
+			</ram:SpecifiedSPSAddress>
+		</ram:ConsignorSPSParty>
+		<ram:UnloadingBaseportSPSLocation>
+			<ram:ID>1</ram:ID>
+			<ram:Name>Pisiga</ram:Name>
+		</ram:UnloadingBaseportSPSLocation>
+		<ram:MainCarriageSPSTransportMovement>
+			<ram:ModeCode>4</ram:ModeCode>
+			<ram:UsedSPSTransportMeans>
+				<ram:Name>Aéreo</ram:Name>
+			</ram:UsedSPSTransportMeans>
+		</ram:MainCarriageSPSTransportMovement>
+		<ram:IncludedSPSConsignmentItem>
+			<ram:IncludedSPSTradeLineItem>
+				<ram:Description>Madera (Muebles)</ram:Description>
+				<ram:CommonName>Madera (Muebles)</ram:CommonName>
+				<ram:ScientificName>NULL</ram:ScientificName>
+				<ram:IntendedUse>1 bolsa</ram:IntendedUse>
+				<ram:NetWeightMeasure unitCode="KGM">1.00</ram:NetWeightMeasure>
+				<ram:AdditionalInformationSPSNote>
+					
+					<ram:Content>8</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>OQU</ram:Subject>
+					<ram:Content>1 bolsa</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Content>REQUISITOS FITOSANITARIO</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>ADTLIL</ram:Subject>
+					<ram:Content>sin declaracion adicional</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:ApplicableSPSClassification>
+					<ram:SystemName>HS</ram:SystemName>
+					<ram:ClassCode>null</ram:ClassCode>
+				</ram:ApplicableSPSClassification>
+				<ram:PhysicalSPSPackage>
+					<ram:LevelCode>0</ram:LevelCode>
+					<ram:TypeCode>BX</ram:TypeCode>
+					<ram:ItemQuantity>1.00</ram:ItemQuantity>
+				</ram:PhysicalSPSPackage>
+				<ram:OriginSPSCountry>
+					<ram:ID>BO</ram:ID>
+					<ram:Name>Estado Plurinacional de Bolivia</ram:Name>
+					<ram:SubordinateSPSCountrySubDivision>
+						<ram:Name>Santa Cruz</ram:Name>
+					</ram:SubordinateSPSCountrySubDivision>
+				</ram:OriginSPSCountry>
+			</ram:IncludedSPSTradeLineItem>
+		</ram:IncludedSPSConsignmentItem>
+	</rsm:SPSConsignment>
+</rsm:SPSImportPermit>

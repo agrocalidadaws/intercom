@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== -->
+<!-- ===== Annex: IPPC Schema Field Tag Acronym Codes - Code List Schema Module                            ===== -->
+<!-- ====================================================================== -->
+<!--
+Schema agency:      INTERCOM
+Schema version:     1.0
+Schema date:        31/05/2023
+
+Code list name:     Annex: IPPC Schema Field Tag Acronym Codes
+Code list agency:   ePhytoGuide
+Code list version:  2.10
+
+Copyright (C) ePhyto. All Rights Reserved.
+Copyright (C) INTERCOM. All table systematization rights reserved.
+
+This document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and this paragraph are included on all such copies and derivative works. However, this document itself may not be modified in any way, such as by removing the copyright notice or references to UN/CEFACT, except as needed for the purpose of developing UN/CEFACT specifications, in which case the procedures for copyrights defined in the UN/CEFACT Intellectual Property Rights document must be followed, or as required to translate it into languages other than English.
+
+The limited permissions granted above are perpetual and will not be revoked by UN/CEFACT or its successors or assigns.
+
+This document and the information contained herein is provided on an "AS IS" basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:clmAcronymSubjectCode="urn:sgcan:intercom:codelist:standard:INTERCOM:ePhyto:TagAcronymCodes:1" 
+            xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" 
+            targetNamespace="urn:sgcan:intercom:codelist:standard:INTERCOM:ePhyto:TagAcronymCodes:1" 
+            elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+<!-- ======================================================================= -->
+<!-- ===== Element Declarations                                        ===== -->
+<!-- ======================================================================= -->
+<!-- ===== Root Element                                                ===== -->
+<!-- ======================================================================= -->
+  <xsd:element name="TagAcronymSubjectCodes" type="clmAcronymSubjectCode:TagAcronymSubjectCodesContentType"/>
+<!-- ================================================================== -->
+<!-- ===== Type Definitions                                       ===== -->
+<!-- ================================================================== -->
+<!-- ===== Type Definition: TagAcronymSubjectCodesContentType ===== -->
+<!-- ================================================================== -->
+  <xsd:simpleType name="TagAcronymSubjectCodesContentType">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="SPSFL">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Optional Clause</ccts:Name>
+            <ccts:Description>SPS Financial Liability Clause</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DMCL">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Distinguishing Marks</ccts:Name>
+            <ccts:Description>Distinguishing Marks at Document Level</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DMTLIL">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Distinguishing Marks</ccts:Name>
+            <ccts:Description>Distinguishing Marks at Trade Line Item Level</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RPCST">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Reexport Certification Statement</ccts:Name>
+            <ccts:Description>Reexport Phytosanitary Certificate Statement</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RPCCO">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Reexport Certification Statement</ccts:Name>
+            <ccts:Description>Contracting party of origin</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RPCRF">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Reexport Certification Statement</ccts:Name>
+            <ccts:Description>Reference of Phytosanitary Certificate</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RPCOR">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Reexport Certification Statement</ccts:Name>
+            <ccts:Description>Phytosanitary Certificate is an original</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RPCTC">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Reexport Certification Statement</ccts:Name>
+            <ccts:Description>Phytosanitary Certificate is a certified true copy</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RPCPK">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Reexport Certification Statement</ccts:Name>
+            <ccts:Description>The products are packed</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RPCRP">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Reexport Certification Statement</ccts:Name>
+            <ccts:Description>The products are repacked</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RPCOC">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Reexport Certification Statement</ccts:Name>
+            <ccts:Description>Original containers</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RPCNC">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Reexport Certification Statement</ccts:Name>
+            <ccts:Description>New containers</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RPCPC">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Reexport Certification Statement</ccts:Name>
+            <ccts:Description>Original Phytosanitary Certificate</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RPCAI">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Reexport Certification Statement</ccts:Name>
+            <ccts:Description>Additional inspection</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="OQU">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Quantity Declared</ccts:Name>
+            <ccts:Description>Other Quantity Unit</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="OQV">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Quantity Declared</ccts:Name>
+            <ccts:Description>Other Quantity Value</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ADCO">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Additional Declaration</ccts:Name>
+            <ccts:Description>Common Additional Declaration</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ADIP">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Additional Declaration</ccts:Name>
+            <ccts:Description>Import Permit Additional Declaration</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ADDI">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Additional Declaration</ccts:Name>
+            <ccts:Description>Date of Inspection Additional Declaration</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ADAO">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Additional Declaration</ccts:Name>
+            <ccts:Description>Additional Official Phytosanitary Information Additional Declaration</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ADRP">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Replacement Additional Declaration</ccts:Name>
+            <ccts:Description>Replacement Additional Declaration</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ADRPN">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Replacement Additional Declaration</ccts:Name>
+            <ccts:Description>Number of Certificate that is being replaced</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ADRD">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Replacement Additional Declaration</ccts:Name>
+            <ccts:Description>Issue date of the certificate that is being replaced</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ADRPR">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Replacement Additional Declaration</ccts:Name>
+            <ccts:Description>Replacement Reason</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="TTL1">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Treatment Information</ccts:Name>
+            <ccts:Description>Treatment Level 1</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="TTL2">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Treatment Information</ccts:Name>
+            <ccts:Description>Treatment Level 2</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="TTCH">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Treatment Information</ccts:Name>
+            <ccts:Description>Chemical used</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="TTTM">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Treatment Information</ccts:Name>
+            <ccts:Description>Temperature unit</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="TTCO">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Treatment Information</ccts:Name>
+            <ccts:Description>Concentration</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="TTAI">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Treatment Information</ccts:Name>
+            <ccts:Description>Treatment Additional Information</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="TTFT">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Treatment Information</ccts:Name>
+            <ccts:Description>Full Treatment Details</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ADEDL">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Additional Declaration at Document Level</ccts:Name>
+            <ccts:Description>Additional declaration at documentlevel</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ADIPEDL">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Additional Declaration at Document Level</ccts:Name>
+            <ccts:Description>Import permit at document level</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ADDIEDL">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Additional Declaration at Document Level</ccts:Name>
+            <ccts:Description>Date of Inspection at document level</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ADAOEDL">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Additional Declaration at Document Level</ccts:Name>
+            <ccts:Description>Additional Official Information at document level</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ADTLIL">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Additional Declaration at Trade Line Item Level</ccts:Name>
+            <ccts:Description>Additional Declarations at Trade Line Item Level</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ADIPTLIL">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Additional Declaration at Trade Line Item Level</ccts:Name>
+            <ccts:Description>Import Permit at Trade Line Item Level</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ADDITLIL">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Additional Declaration at Trade Line Item Level</ccts:Name>
+            <ccts:Description>Date of Inspection at Trade Line Item Level</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ADAOTLIL">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Additional Declaration at Trade Line Item Level</ccts:Name>
+            <ccts:Description>Additional Official Information at Trade Line Item Level</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="HS">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Product Description</ccts:Name>
+            <ccts:Description>Customs Harmonized System</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IPPCPCVP">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Product Description</ccts:Name>
+            <ccts:Description>IPPC commodity class - Vegetable Part</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IPPCPCC">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Product Description</ccts:Name>
+            <ccts:Description>IPPC commodity class - Condition</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="OPTND">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">
+            <ccts:Name>Packages Number and Description</ccts:Name>
+            <ccts:Description>Other Package Types Number and Description</ccts:Description>
+          </xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>

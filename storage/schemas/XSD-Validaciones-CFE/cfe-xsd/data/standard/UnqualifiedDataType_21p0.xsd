@@ -1,0 +1,3037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== -->
+<!-- ===== Unqualified Data Type Schema Module                        ===== -->
+<!-- ====================================================================== -->
+<!--
+Schema agency:  UN/CEFACT 
+Schema version: 21.0
+Schema date:    18MAR17
+
+Copyright (C) UN/CEFACT (2015). All Rights Reserved.
+
+This document and translations of it may be copied and furnished to others, 
+and derivative works that comment on or otherwise explain it or assist 
+in its implementation may be prepared, copied, published and distributed, 
+in whole or in part, without restriction of any kind, provided that the 
+above copyright notice and this paragraph are included on all such copies 
+and derivative works. However, this document itself may not be modified in 
+any way, such as by removing the copyright notice or references to 
+UN/CEFACT, except as needed for the purpose of developing UN/CEFACT 
+specifications, in which case the procedures for copyrights defined in the 
+UN/CEFACT Intellectual Property Rights document must be followed, or as 
+required to translate it into languages other than English.
+
+The limited permissions granted above are perpetual and will not be revoked 
+by UN/CEFACT or its successors or assigns.
+
+This document and the information contained herein is provided on an "AS IS"
+basis and UN/CEFACT DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING 
+BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL 
+NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR 
+FITNESS FOR A PARTICULAR PURPOSE.
+-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:21" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" targetNamespace="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:21" elementFormDefault="qualified" attributeFormDefault="unqualified" version="21.0">
+	<!-- ================================================================== -->
+	<!-- ===== Type Definitions                                       ===== -->
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: AmountType                            ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="AmountType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT000001</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Amount. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A number of monetary units specified in a currency where the unit of the currency is explicit or implied.</ccts:Definition>
+				<ccts:PrimitiveType>Decimal</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:decimal">
+				<xsd:attribute name="currencyID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Amount Currency. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The currency of the amount.</ccts:Definition>
+							<ccts:ObjectClassTerm>Amount Currency</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="currencyCodeListVersionID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Amount Currency. Code List Version. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Version of the UN/ECE Rec.9 code list.</ccts:Definition>
+							<ccts:ObjectClassTerm>Amount Currency</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Code List Version</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: BinaryObjectType                      ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="BinaryObjectType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT000002</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Binary Object. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A set of finite-length sequences of binary octets.</ccts:Definition>
+				<ccts:PrimitiveType>Binary</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:base64Binary">
+				<xsd:attribute name="format" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Format. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The format of the binary content.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Format</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="mimeCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Mime. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>The mime type of the binary object.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Mime</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="encodingCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Encoding. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>Specifies the decoding algorithm of the binary object.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Encoding</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="characterSetCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Character Set. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>The character set of the binary object if the mime type is text.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Character Set</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="uri" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the Binary Object is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="filename" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Filename. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The filename of the binary object.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Filename</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: BinaryObjectValidationType            ===== -->
+	<!-- ================================================================== -->
+	<xsd:simpleType name="BinaryObjectRestrictionType">
+		<xsd:restriction base="xsd:base64Binary">
+			<xsd:maxLength value="256"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="BinaryObjectValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT000002</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Binary Object. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A set of finite-length sequences of binary octets.</ccts:Definition>
+				<ccts:PrimitiveType>Binary</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:BinaryObjectRestrictionType">
+				<xsd:attribute name="format" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Format. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The format of the binary content.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Format</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="mimeCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Mime. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>The mime type of the binary object.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Mime</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="encodingCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Encoding. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>Specifies the decoding algorithm of the binary object.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Encoding</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="characterSetCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Character Set. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>The character set of the binary object if the mime type is text.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Character Set</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="uri" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the Binary Object is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="filename" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Filename. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The filename of the binary object.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Filename</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: CodeType                              ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="CodeType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT000007</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Code. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string (letters, figures or symbols) that for brevity and/or language independence may be used to represent or replace a definitive value or text of an Attribute together with relevant supplementary information.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:token">
+				<xsd:attribute name="listID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code List. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of a list of codes</ccts:Definition>
+							<ccts:ObjectClassTerm>Code List</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="listAgencyID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code List. Agency. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>An agency that maintains one or more code lists.</ccts:Definition>
+							<ccts:ObjectClassTerm>Code List</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Agency</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="listAgencyName" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code List. Agency Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The name of the agency that maintains the code list.</ccts:Definition>
+							<ccts:ObjectClassTerm>Code List</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Agency Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="listName" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code List. Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The name of a list of codes.</ccts:Definition>
+							<ccts:ObjectClassTerm>Code List</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="listVersionID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code List. Version. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Version of the code list.</ccts:Definition>
+							<ccts:ObjectClassTerm>Code List</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Version</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="name" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code. Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The textual equivalent of the code content.</ccts:Definition>
+							<ccts:ObjectClassTerm>Code</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="languageID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identifier of the language used in the corresponding text string.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="listURI" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code List. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the code list is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Code List</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="listSchemeURI" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code List Scheme. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the code list scheme is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Code List Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- =========================================================================== -->
+	<!-- ===== Type Definition: CodeApplicableSPSClassificationValidationType  ===== -->
+	<!-- =========================================================================== -->
+	<xsd:simpleType name="CodeApplicableSPSClassificationRestrictionType">
+		<xsd:restriction base="xsd:integer">
+			<xsd:totalDigits value="6"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="CodeApplicableSPSClassificationValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT000007</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Code. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string (letters, figures or symbols) that for brevity and/or language independence may be used to represent or replace a definitive value or text of an Attribute together with relevant supplementary information.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:CodeApplicableSPSClassificationRestrictionType">
+				<xsd:attribute name="listID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code List. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of a list of codes</ccts:Definition>
+							<ccts:ObjectClassTerm>Code List</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="listAgencyID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code List. Agency. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>An agency that maintains one or more code lists.</ccts:Definition>
+							<ccts:ObjectClassTerm>Code List</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Agency</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="listAgencyName" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code List. Agency Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The name of the agency that maintains the code list.</ccts:Definition>
+							<ccts:ObjectClassTerm>Code List</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Agency Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="listName" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code List. Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The name of a list of codes.</ccts:Definition>
+							<ccts:ObjectClassTerm>Code List</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="listVersionID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code List. Version. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Version of the code list.</ccts:Definition>
+							<ccts:ObjectClassTerm>Code List</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Version</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="name" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code. Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The textual equivalent of the code content.</ccts:Definition>
+							<ccts:ObjectClassTerm>Code</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="languageID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identifier of the language used in the corresponding text string.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="listURI" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code List. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the code list is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Code List</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="listSchemeURI" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code List Scheme. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the code list scheme is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Code List Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: CodePhysicalSPSPackageValidationType  ===== -->
+	<!-- ================================================================== -->
+	<xsd:simpleType name="CodePhysicalSPSPackageRestrictionType">
+		<xsd:restriction base="xsd:integer">
+			<xsd:totalDigits value="3"/>
+			<xsd:pattern value="\S.*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="CodePhysicalSPSPackageValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT000007</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Code. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string (letters, figures or symbols) that for brevity and/or language independence may be used to represent or replace a definitive value or text of an Attribute together with relevant supplementary information.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:CodePhysicalSPSPackageRestrictionType">
+				<xsd:attribute name="listID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code List. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of a list of codes</ccts:Definition>
+							<ccts:ObjectClassTerm>Code List</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="listAgencyID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code List. Agency. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>An agency that maintains one or more code lists.</ccts:Definition>
+							<ccts:ObjectClassTerm>Code List</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Agency</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="listAgencyName" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code List. Agency Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The name of the agency that maintains the code list.</ccts:Definition>
+							<ccts:ObjectClassTerm>Code List</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Agency Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="listName" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code List. Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The name of a list of codes.</ccts:Definition>
+							<ccts:ObjectClassTerm>Code List</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="listVersionID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code List. Version. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Version of the code list.</ccts:Definition>
+							<ccts:ObjectClassTerm>Code List</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Version</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="name" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code. Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The textual equivalent of the code content.</ccts:Definition>
+							<ccts:ObjectClassTerm>Code</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="languageID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identifier of the language used in the corresponding text string.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="listURI" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code List. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the code list is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Code List</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="listSchemeURI" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Code List Scheme. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the code list scheme is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Code List Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: StartDateTimeType                     ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="StartDateTimeType">
+		<xsd:choice>
+			<xsd:element name="DateTimeString" type="xsd:dateTime" minOccurs="1"/>
+			<xsd:element name="DateTime" type="xsd:dateTime"/>
+		</xsd:choice>
+	</xsd:complexType>
+	
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: EndDateTimeType                       ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="EndDateTimeType">
+		<xsd:choice>
+			<xsd:element name="DateTimeString" type="xsd:dateTime" minOccurs="1"/>
+			<xsd:element name="DateTime" type="xsd:dateTime"/>
+		</xsd:choice>
+	</xsd:complexType>
+	
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: IssueDateTimeType                     ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="IssueDateTimeType">
+		<xsd:choice>
+			<xsd:element name="DateTimeString" type="xsd:dateTime" minOccurs="1"/>
+			<xsd:element name="DateTime" type="xsd:dateTime"/>
+		</xsd:choice>
+	</xsd:complexType>	
+	
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: DateTimeType                          ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="DateTimeType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT000008</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Date Time. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A particular point in the progression of time together with the relevant supplementary information.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="DateTimeString" minOccurs="1">
+				<xsd:complexType>
+					<xsd:simpleContent>
+						<xsd:extension base="xsd:string">
+							<xsd:attribute name="format" type="xsd:string" use="optional"/>
+						</xsd:extension>
+					</xsd:simpleContent>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="DateTime" type="xsd:dateTime"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: EffectiveDateTimeValidationType       ===== -->
+	<!-- ================================================================== -->
+	<xsd:simpleType name="EffectiveDateTimeRestrictionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="50">
+				<xsd:annotation>
+					<xsd:documentation>
+						<ccts:Definition>Dias de vigencia</ccts:Definition>
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:maxLength>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="EffectiveDateTimeValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT000008</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Date Time. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A particular point in the progression of time together with the relevant supplementary information.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="DateTimeString" minOccurs="1">
+				<xsd:complexType>
+					<xsd:simpleContent>
+						<xsd:extension base="udt:EffectiveDateTimeRestrictionType">
+							<xsd:attribute name="format" type="xsd:string" use="optional" default="804"/>
+						</xsd:extension>
+					</xsd:simpleContent>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="DateTime" type="xsd:dateTime"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: DateType                              ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="DateType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT000009</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Date. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A particular point in the progression of time together with the relevant supplementary information.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="DateString">
+				<xsd:complexType>
+					<xsd:simpleContent>
+						<xsd:extension base="xsd:string">
+							<xsd:attribute name="format" type="xsd:string" use="optional"/>
+						</xsd:extension>
+					</xsd:simpleContent>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Date" type="xsd:date"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: GraphicType                           ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="GraphicType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT000003</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Graphic. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A set of finite-length sequences of binary octets.</ccts:Definition>
+				<ccts:PrimitiveType>Binary</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:base64Binary">
+				<xsd:attribute name="format" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Format. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The format of the binary content.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Format</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="mimeCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Mime. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>The mime type of the binary object.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Mime</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="encodingCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Encoding. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>Specifies the decoding algorithm of the binary object.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Encoding</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="characterSetCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Character Set. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>The character set of the binary object if the mime type is text.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Character Set</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="uri" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the Binary Object is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="filename" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Filename. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The filename of the binary object.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Filename</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: IDType                                ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="IDType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000011</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Identifier. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string to identify and distinguish uniquely, one instance of an object in an identification scheme from all other objects in the same scheme together with relevant supplementary information.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:token">
+				<xsd:attribute name="schemeID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeName" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The name of the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeAgencyID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme Agency. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the agency that maintains the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme Agency</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeAgencyName" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Agency Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The name of the agency that maintains the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Agency Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeVersionID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Version. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Version of the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Version</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeDataURI" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme Data. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the identification scheme data is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme Data</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeURI" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the identification scheme is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: IDLocationValidationType              ===== -->
+	<!-- ================================================================== -->
+	<xsd:simpleType name="IDSPSClauseRestrictionType">
+		<xsd:restriction base="xsd:integer">
+		<xsd:totalDigits value="2"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="IDSPSClauseValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000011</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Identifier. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string to identify and distinguish uniquely, one instance of an object in an identification scheme from all other objects in the same scheme together with relevant supplementary information.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:IDSPSClauseRestrictionType">
+				<xsd:attribute name="schemeID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeName" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The name of the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeAgencyID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme Agency. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the agency that maintains the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme Agency</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeAgencyName" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Agency Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The name of the agency that maintains the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Agency Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeVersionID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Version. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Version of the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Version</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeDataURI" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme Data. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the identification scheme data is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme Data</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeURI" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the identification scheme is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: IDUnloadingBaseportSPSLocationType    ===== -->
+	<!-- ================================================================== -->
+	<xsd:simpleType name="IDUnloadingBaseportSPSLocationRestrictionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="2"/>
+			<xsd:pattern value="\S.*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="IDUnloadingBaseportSPSLocationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000011</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Identifier. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string to identify and distinguish uniquely, one instance of an object in an identification scheme from all other objects in the same scheme together with relevant supplementary information.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:IDUnloadingBaseportSPSLocationRestrictionType">
+				<xsd:attribute name="schemeID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeName" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The name of the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeAgencyID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme Agency. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the agency that maintains the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme Agency</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeAgencyName" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Agency Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The name of the agency that maintains the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Agency Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeVersionID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Version. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Version of the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Version</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeDataURI" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme Data. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the identification scheme data is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme Data</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeURI" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the identification scheme is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ============================================================================================ -->
+	<!-- ===== Type Definition: IDSPSTransportMovemenValidationtTypeValidationType              ===== -->
+	<!-- ============================================================================================ -->
+	<xsd:simpleType name="IDSPSTransportMovemenValidationtTypeRestrictionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="256"/>
+			<xsd:pattern value="\S.*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="IDSPSTransportMovemenValidationtTypeValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000011</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Identifier. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string to identify and distinguish uniquely, one instance of an object in an identification scheme from all other objects in the same scheme together with relevant supplementary information.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:IDSPSTransportMovemenValidationtTypeRestrictionType">
+				<xsd:attribute name="schemeID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeName" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The name of the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeAgencyID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme Agency. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the agency that maintains the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme Agency</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeAgencyName" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Agency Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The name of the agency that maintains the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Agency Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeVersionID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Version. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Version of the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Version</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeDataURI" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme Data. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the identification scheme data is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme Data</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeURI" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the identification scheme is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: IDValidationType                      ===== -->
+	<!-- ================================================================== -->
+	<xsd:simpleType name="IDRestrictionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="60"/>
+			<xsd:pattern value="[0-9]{1,58}(CO|BO|EC|PE)"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="IDValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000011</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Identifier. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string to identify and distinguish uniquely, one instance of an object in an identification scheme from all other objects in the same scheme together with relevant supplementary information.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:IDRestrictionType">
+				<xsd:attribute name="schemeID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeName" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The name of the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeAgencyID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme Agency. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the agency that maintains the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme Agency</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeAgencyName" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Agency Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The name of the agency that maintains the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Agency Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeVersionID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Version. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Version of the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Version</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeDataURI" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme Data. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the identification scheme data is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme Data</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeURI" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the identification scheme is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: SPSReferencedDocumentIDValidationType ===== -->
+	<!-- ================================================================== -->
+	<xsd:simpleType name="SPSReferencedDocumentIDRestrictionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="60"/>
+			<xsd:pattern value="\S.*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="SPSReferencedDocumentIDValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000011</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Identifier. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string to identify and distinguish uniquely, one instance of an object in an identification scheme from all other objects in the same scheme together with relevant supplementary information.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:SPSReferencedDocumentIDRestrictionType">
+				<xsd:attribute name="schemeID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeName" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The name of the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeAgencyID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme Agency. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the agency that maintains the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme Agency</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeAgencyName" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Agency Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The name of the agency that maintains the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Agency Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeVersionID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Version. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Version of the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Version</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeDataURI" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme Data. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the identification scheme data is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme Data</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeURI" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the identification scheme is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: IDAffixedSPSSealValidationType        ===== -->
+	<!-- ================================================================== -->
+	<xsd:simpleType name="IDAffixedSPSSealRestrictionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="256"/>
+			<xsd:pattern value="\S.*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:complexType name="IDAffixedSPSSealValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000011</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Identifier. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string to identify and distinguish uniquely, one instance of an object in an identification scheme from all other objects in the same scheme together with relevant supplementary information.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:IDAffixedSPSSealRestrictionType">
+				<xsd:attribute name="schemeID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeName" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The name of the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeAgencyID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme Agency. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the agency that maintains the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme Agency</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeAgencyName" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Agency Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The name of the agency that maintains the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Agency Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeVersionID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Version. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Version of the identification scheme.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Version</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeDataURI" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme Data. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the identification scheme data is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme Data</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="schemeURI" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Identification Scheme. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the identification scheme is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Identification Scheme</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: IndicatorType                         ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="IndicatorType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000012</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Indicator. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A list of two mutually exclusive Boolean values that express the only possible states of a Property.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="IndicatorString">
+				<xsd:complexType>
+					<xsd:simpleContent>
+						<xsd:extension base="xsd:string">
+							<xsd:attribute name="format" type="xsd:string" use="optional"/>
+						</xsd:extension>
+					</xsd:simpleContent>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Indicator" type="xsd:boolean"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: MeasureType                           ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="MeasureType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000013</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Measure. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A numeric valuedetermined by measuring an object along with the specified unit of measure.</ccts:Definition>
+				<ccts:PrimitiveType>Decimal</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:decimal">
+				<xsd:attribute name="unitCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Measure Unit. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>The type of unit of measure.</ccts:Definition>
+							<ccts:ObjectClassTerm>Measure Unit</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Code</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="unitCodeListVersionID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Measure Unit. Code List Version. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Version of the measure unit code list.</ccts:Definition>
+							<ccts:ObjectClassTerm>Measure Unit</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Code List Version</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: MeasureDurationValidationType         ===== -->
+	<!-- ================================================================== -->
+	<xsd:simpleType name="MeasureProcessRestrictionType">
+		<xsd:restriction base="xsd:decimal">
+			<xsd:pattern value="([1-9]\d{0,13}(\.\d{1,4})?)|0\.\d{1,4}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="MeasureProcessValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000013</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Measure. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A numeric valuedetermined by measuring an object along with the specified unit of measure.</ccts:Definition>
+				<ccts:PrimitiveType>Decimal</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:MeasureProcessRestrictionType">
+				<xsd:attribute name="unitCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Measure Unit. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>The type of unit of measure.</ccts:Definition>
+							<ccts:ObjectClassTerm>Measure Unit</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Code</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="unitCodeListVersionID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Measure Unit. Code List Version. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Version of the measure unit code list.</ccts:Definition>
+							<ccts:ObjectClassTerm>Measure Unit</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Code List Version</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: MeasureValidationType                 ===== -->
+	<!-- ================================================================== -->
+	<xsd:simpleType name="MeasureRestrictionType">
+		<xsd:restriction base="xsd:decimal">
+			<xsd:pattern value="([1-9]\d{0,19}(\.\d{1,4})?)|0\.\d{1,4}"/>
+	    </xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="MeasureValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000013</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Measure. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A numeric valuedetermined by measuring an object along with the specified unit of measure.</ccts:Definition>
+				<ccts:PrimitiveType>Decimal</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:MeasureRestrictionType">
+				<xsd:attribute name="unitCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Measure Unit. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>The type of unit of measure.</ccts:Definition>
+							<ccts:ObjectClassTerm>Measure Unit</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Code</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="unitCodeListVersionID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Measure Unit. Code List Version. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Version of the measure unit code list.</ccts:Definition>
+							<ccts:ObjectClassTerm>Measure Unit</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Code List Version</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: NameType                              ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="NameType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000020</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Name. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string (i.e. a finite set of characters) generally in the form of words of a language.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="languageID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identifier of the language used in the corresponding text string.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="languageLocaleID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Locale. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the locale of the language.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Locale</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: NumericType                           ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="NumericType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000014</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Numeric. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>Numeric information that is assigned or is determined by calculation, counting, or sequencing. It does not require a unit of quantity or unit of measure.</ccts:Definition>
+				<ccts:PrimitiveType>Decimal</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:decimal">
+				<xsd:attribute name="format" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Numeric. Format. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>Whether the number is an integer, decimal, real number or percentage.</ccts:Definition>
+							<ccts:ObjectClassTerm>Numeric</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Format</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: PercentType                           ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="PercentType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000016</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Percent. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>Numeric information that is assigned or is determined by calculation, counting, or sequencing. It does not require a unit of quantity or unit of measure.</ccts:Definition>
+				<ccts:PrimitiveType>Decimal</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:decimal">
+				<xsd:attribute name="format" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Numeric. Format. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>Whether the number is an integer, decimal, real number or percentage.</ccts:Definition>
+							<ccts:ObjectClassTerm>Numeric</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Format</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: PictureType                           ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="PictureType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT000004</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Picture. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A set of finite-length sequences of binary octets.</ccts:Definition>
+				<ccts:PrimitiveType>Binary</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:base64Binary">
+				<xsd:attribute name="format" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Format. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The format of the binary content.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Format</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="mimeCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Mime. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>The mime type of the binary object.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Mime</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="encodingCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Encoding. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>Specifies the decoding algorithm of the binary object.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Encoding</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="characterSetCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Character Set. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>The character set of the binary object if the mime type is text.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Character Set</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="uri" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the Binary Object is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="filename" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Filename. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The filename of the binary object.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Filename</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: QuantityType                          ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="QuantityType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000018</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Quantity. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A counted number of non-monetary units possibly including fractions.</ccts:Definition>
+				<ccts:PrimitiveType>Decimal</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:decimal">
+				<xsd:attribute name="unitCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Quantity Unit. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>The unit of the quantity.</ccts:Definition>
+							<ccts:ObjectClassTerm>Quantity Unit</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Code</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="unitCodeListID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Quantity Unit. Code List. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The quantity unit code list.</ccts:Definition>
+							<ccts:ObjectClassTerm>Quantity Unit</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Code List</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="unitCodeListAgencyID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Quantity Unit. Code List Agency. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the agency which maintains the quantity unit code list.</ccts:Definition>
+							<ccts:ObjectClassTerm>Quantity Unit</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Code List Agency</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="unitCodeListAgencyName" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Quantity Unit. Code List Agency Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The name of the agency which maintains the quantity unit code list.</ccts:Definition>
+							<ccts:ObjectClassTerm>Quantity Unit</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Code List Agency Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ======================================================================= -->
+	<!-- ===== Type Definition: QuantityPhysicalSPSPackageValidationType   ===== -->
+	<!-- ======================================================================= -->
+	<xsd:simpleType name="QuantityPhysicalSPSPackageRestrictionType">
+		<xsd:restriction base="xsd:decimal">
+			<xsd:pattern value="([1-9]\d{0,19}(\.\d{1,4})?)|0\.\d{1,4}"/> 
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="QuantityPhysicalSPSPackageValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000018</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Quantity. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A counted number of non-monetary units possibly including fractions.</ccts:Definition>
+				<ccts:PrimitiveType>Decimal</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:QuantityPhysicalSPSPackageRestrictionType">
+				<xsd:attribute name="unitCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Quantity Unit. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>The unit of the quantity.</ccts:Definition>
+							<ccts:ObjectClassTerm>Quantity Unit</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Code</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="unitCodeListID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Quantity Unit. Code List. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The quantity unit code list.</ccts:Definition>
+							<ccts:ObjectClassTerm>Quantity Unit</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Code List</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="unitCodeListAgencyID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Quantity Unit. Code List Agency. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the agency which maintains the quantity unit code list.</ccts:Definition>
+							<ccts:ObjectClassTerm>Quantity Unit</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Code List Agency</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="unitCodeListAgencyName" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Quantity Unit. Code List Agency Name. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The name of the agency which maintains the quantity unit code list.</ccts:Definition>
+							<ccts:ObjectClassTerm>Quantity Unit</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Code List Agency Name</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: RateType                              ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="RateType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000017</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Rate. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>Numeric information that is assigned or is determined by calculation, counting, or sequencing. It does not require a unit of quantity or unit of measure.</ccts:Definition>
+				<ccts:PrimitiveType>Decimal</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:decimal">
+				<xsd:attribute name="format" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Numeric. Format. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>Whether the number is an integer, decimal, real number or percentage.</ccts:Definition>
+							<ccts:ObjectClassTerm>Numeric</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Format</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: SoundType                             ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="SoundType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT000005</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Sound. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A set of finite-length sequences of binary octets.</ccts:Definition>
+				<ccts:PrimitiveType>Binary</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:base64Binary">
+				<xsd:attribute name="format" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Format. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The format of the binary content.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Format</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="mimeCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Mime. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>The mime type of the binary object.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Mime</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="encodingCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Encoding. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>Specifies the decoding algorithm of the binary object.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Encoding</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="characterSetCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Character Set. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>The character set of the binary object if the mime type is text.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Character Set</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="uri" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the Binary Object is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="filename" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Filename. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The filename of the binary object.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Filename</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	
+	<!-- =============================================================================== -->
+	<!-- ===== Type Definition: TextApplicableSPSClassificationValidationType      ===== -->
+	<!-- =============================================================================== -->
+	<xsd:simpleType name="ClassNameRestrictionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="70"/>
+			<xsd:pattern value="\S.*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="ClassNameValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000019</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Text. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string (i.e. a finite set of characters) generally in the form of words of a language.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:ClassNameRestrictionType">
+				<xsd:attribute name="languageID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identifier of the language used in the corresponding text string.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="languageLocaleID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Locale. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the locale of the language.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Locale</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: TextType                              ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="TextType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000019</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Text. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string (i.e. a finite set of characters) generally in the form of words of a language.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="languageID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identifier of the language used in the corresponding text string.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="languageLocaleID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Locale. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the locale of the language.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Locale</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- =============================================================================== -->
+	<!-- ===== Type Definition: TextApplicableSPSClassificationValidationType      ===== -->
+	<!-- =============================================================================== -->
+	<xsd:simpleType name="TextApplicableSPSClassificationValidationRestrictionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="6"/>
+			<xsd:pattern value="\S.*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="TextApplicableSPSClassificationValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000019</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Text. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string (i.e. a finite set of characters) generally in the form of words of a language.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:TextApplicableSPSClassificationValidationRestrictionType">
+				<xsd:attribute name="languageID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identifier of the language used in the corresponding text string.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="languageLocaleID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Locale. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the locale of the language.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Locale</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: TextAddressLineOneValidationType      ===== -->
+	<!-- ================================================================== -->
+	<xsd:simpleType name="TextAddressLineOneRestrictionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="200"/>
+			<xsd:pattern value="\S.*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="TextAddressLineOneValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000019</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Text. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string (i.e. a finite set of characters) generally in the form of words of a language.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:TextAddressLineOneRestrictionType">
+				<xsd:attribute name="languageID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identifier of the language used in the corresponding text string.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="languageLocaleID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Locale. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the locale of the language.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Locale</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: TextAddressLineTwoValidationType      ===== -->
+	<!-- ================================================================== -->
+	<xsd:simpleType name="TextAddressLineTwoRestrictionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="200"/>
+			<xsd:pattern value="\S.*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="TextAddressLineTwoValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000019</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Text. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string (i.e. a finite set of characters) generally in the form of words of a language.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:TextAddressLineTwoRestrictionType">
+				<xsd:attribute name="languageID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identifier of the language used in the corresponding text string.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="languageLocaleID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Locale. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the locale of the language.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Locale</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: TextAddressLineThreeValidationType    ===== -->
+	<!-- ================================================================== -->
+	<xsd:simpleType name="TextAddressLineThreeRestrictionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="200"/>
+			<xsd:pattern value="\S.*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="TextAddressLineThreeValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000019</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Text. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string (i.e. a finite set of characters) generally in the form of words of a language.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:TextAddressLineThreeRestrictionType">
+				<xsd:attribute name="languageID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identifier of the language used in the corresponding text string.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="languageLocaleID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Locale. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the locale of the language.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Locale</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: TextAddressLineFourValidationType    ===== -->
+	<!-- ================================================================== -->
+	<xsd:simpleType name="TextAddressLineFourRestrictionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="200"/>
+			<xsd:pattern value="\S.*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="TextAddressLineFourValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000019</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Text. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string (i.e. a finite set of characters) generally in the form of words of a language.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:TextAddressLineFourRestrictionType">
+				<xsd:attribute name="languageID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identifier of the language used in the corresponding text string.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="languageLocaleID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Locale. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the locale of the language.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Locale</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: TextAddressLineFiveValidationType     ===== -->
+	<!-- ================================================================== -->
+	<xsd:simpleType name="TextAddressLineFiveRestrictionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="200"/>
+			<xsd:pattern value="\S.*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="TextAddressLineFiveValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000019</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Text. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string (i.e. a finite set of characters) generally in the form of words of a language.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:TextAddressLineFiveRestrictionType">
+				<xsd:attribute name="languageID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identifier of the language used in the corresponding text string.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="languageLocaleID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Locale. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the locale of the language.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Locale</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: TextConsigneeValidationType           ===== -->
+	<!-- ================================================================== -->
+	<xsd:simpleType name="TextConsigneeRestrictionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="450"/>
+			<xsd:pattern value="\S.*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="TextConsigneeValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000019</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Text. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string (i.e. a finite set of characters) generally in the form of words of a language.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:TextConsigneeRestrictionType">
+				<xsd:attribute name="languageID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identifier of the language used in the corresponding text string.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="languageLocaleID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Locale. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the locale of the language.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Locale</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: TextConsignorValidationType           ===== -->
+	<!-- ================================================================== -->
+	<xsd:simpleType name="TextConsignorRestrictionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="450"/>
+			<xsd:pattern value="\S.*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="TextConsignorValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000019</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Text. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string (i.e. a finite set of characters) generally in the form of words of a language.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:TextConsignorRestrictionType">
+				<xsd:attribute name="languageID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identifier of the language used in the corresponding text string.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="languageLocaleID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Locale. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the locale of the language.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Locale</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: TextInformationValidationType         ===== -->
+	<!-- ================================================================== -->
+	<xsd:simpleType name="TextInformationRestrictionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="8000"/>
+			<xsd:pattern value="[\s\S]+"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="TextInformationValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000019</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Text. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string (i.e. a finite set of characters) generally in the form of words of a language.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:TextInformationRestrictionType">
+				<xsd:attribute name="languageID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identifier of the language used in the corresponding text string.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="languageLocaleID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Locale. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the locale of the language.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Locale</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+		<!-- ================================================================== -->
+	<!-- ===== Type Definition: TextDescriptionValidationType         ===== -->
+	<!-- ================================================================== -->
+	<xsd:simpleType name="SPSProcessCharacteristicDescriptionRestrictionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="8000"/>
+			<xsd:pattern value="\S.*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:complexType name="SPSProcessCharacteristicTextDescriptionValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000019</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Text. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string (i.e. a finite set of characters) generally in the form of words of a language.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:SPSProcessCharacteristicDescriptionRestrictionType">
+				<xsd:attribute name="languageID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identifier of the language used in the corresponding text string.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="languageLocaleID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Locale. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the locale of the language.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Locale</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: TextDescriptionValidationType         ===== -->
+	<!-- ================================================================== -->
+	<xsd:simpleType name="TextDescriptionRestrictionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="256"/>
+			<xsd:pattern value="\S.*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="TextDescriptionValidationType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000019</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Text. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A character string (i.e. a finite set of characters) generally in the form of words of a language.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="udt:TextDescriptionRestrictionType">
+				<xsd:attribute name="languageID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identifier of the language used in the corresponding text string.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Identifier</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="languageLocaleID" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Language. Locale. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The identification of the locale of the language.</ccts:Definition>
+							<ccts:ObjectClassTerm>Language</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Locale</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: TimeType                              ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="TimeType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000010</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Time. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A particular point in the progression of time together with the relevant supplementary information.</ccts:Definition>
+				<ccts:PrimitiveType>String</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="TimeString">
+				<xsd:complexType>
+					<xsd:simpleContent>
+						<xsd:extension base="xsd:string">
+							<xsd:attribute name="format" type="xsd:string" use="optional"/>
+						</xsd:extension>
+					</xsd:simpleContent>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Time" type="xsd:time"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: ValueType                             ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="ValueType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT0000015</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Value. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>Numeric information that is assigned or is determined by calculation, counting, or sequencing. It does not require a unit of quantity or unit of measure.</ccts:Definition>
+				<ccts:PrimitiveType>Decimal</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:decimal">
+				<xsd:attribute name="format" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Numeric. Format. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>Whether the number is an integer, decimal, real number or percentage.</ccts:Definition>
+							<ccts:ObjectClassTerm>Numeric</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Format</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- ================================================================== -->
+	<!-- ===== Type Definition: VideoType                             ===== -->
+	<!-- ================================================================== -->
+	<xsd:complexType name="VideoType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				<ccts:UniqueID>UDT000006</ccts:UniqueID>
+				<ccts:Acronym>UDT</ccts:Acronym>
+				<ccts:DictionaryEntryName>Video. Type</ccts:DictionaryEntryName>
+				<ccts:Version>2.01</ccts:Version>
+				<ccts:Definition>A set of finite-length sequences of binary octets.</ccts:Definition>
+				<ccts:PrimitiveType>Binary</ccts:PrimitiveType>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:base64Binary">
+				<xsd:attribute name="format" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Format. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The format of the binary content.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Format</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="mimeCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Mime. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>The mime type of the binary object.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Mime</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="encodingCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Encoding. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>Specifies the decoding algorithm of the binary object.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Encoding</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="characterSetCode" type="xsd:token" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Character Set. Code</ccts:DictionaryEntryName>
+							<ccts:Definition>The character set of the binary object if the mime type is text.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Character Set</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="uri" type="xsd:anyURI" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Uniform Resource. Identifier</ccts:DictionaryEntryName>
+							<ccts:Definition>The Uniform Resource Identifier that identifies where the Binary Object is located.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Uniform Resource</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="filename" type="xsd:string" use="optional">
+					<xsd:annotation>
+						<xsd:documentation xml:lang="en">
+							<ccts:UniqueID/>
+							<ccts:Acronym>SC</ccts:Acronym>
+							<ccts:DictionaryEntryName>Binary Object. Filename. Text</ccts:DictionaryEntryName>
+							<ccts:Definition>The filename of the binary object.</ccts:Definition>
+							<ccts:ObjectClassTerm>Binary Object</ccts:ObjectClassTerm>
+							<ccts:PropertyTerm>Filename</ccts:PropertyTerm>
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:schema>

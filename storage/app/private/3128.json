@@ -1,0 +1,49 @@
+[
+    {
+        "productos_operador": {
+            "productos": [
+                {
+                    "duracion": null,
+                    "peso_neto": 9180,
+                    "codigo_poa": null,
+                    "peso_bruto": 9486,
+                    "id_duracion": null,
+                    "id_producto": 2176,
+                    "temperatura": null,
+                    "concentracion": null,
+                    "id_temperatura": null,
+                    "id_tratamiento": null,
+                    "nombre_producto": "plátano",
+                    "fecha_inspeccion": "2023-08-14T00:00:00Z",
+                    "id_concentracion": null,
+                    "producto_quimico": null,
+                    "fecha_tratamiento": null,
+                    "cantidad_comercial": 306,
+                    "codigo_tratamiento": null,
+                    "id_subtipo_producto": 24,
+                    "id_tipo_tratamiento": null,
+                    "id_unidad_peso_neto": 55,
+                    "id_unidad_peso_bruto": 55,
+                    "codigo_unidad_duracion": null,
+                    "codigo_tipo_tratamiento": null,
+                    "codigo_unidad_peso_neto": "KGM",
+                    "nombre_subtipo_producto": "Fruta",
+                    "codigo_unidad_peso_bruto": "KGM",
+                    "identificador_exportador": "0401127808001",
+                    "codigo_unidad_temperatura": null,
+                    "codigo_unidad_concentracion": null,
+                    "id_certificado_fitosanitario": 3128,
+                    "id_unidad_cantidad_comercial": 33,
+                    "codigo_unidad_cantidad_comercial": "BX",
+                    "id_total_inspeccion_fitosanitaria": 8348,
+                    "id_certificado_fitosanitario_producto": 3562
+                }
+            ],
+            "datos_operador": {
+                "nombre_operador": "PASPUEL CASTILLO SANTIAGO XAVIER",
+                "direccion_operador": "N12A Matovelle OE3-65 Oe4 y Venezuela",
+                "identificador_operador": "0401127808001"
+            }
+        }
+    }
+]

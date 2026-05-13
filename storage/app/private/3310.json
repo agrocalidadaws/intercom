@@ -1,0 +1,49 @@
+[
+    {
+        "productos_operador": {
+            "productos": [
+                {
+                    "duracion": null,
+                    "peso_neto": 151.77,
+                    "codigo_poa": null,
+                    "peso_bruto": null,
+                    "id_duracion": null,
+                    "id_producto": 22492,
+                    "temperatura": null,
+                    "concentracion": null,
+                    "id_temperatura": null,
+                    "id_tratamiento": null,
+                    "nombre_producto": "palma africana",
+                    "fecha_inspeccion": "2023-08-10T00:00:00Z",
+                    "id_concentracion": null,
+                    "producto_quimico": null,
+                    "fecha_tratamiento": null,
+                    "cantidad_comercial": 9,
+                    "codigo_tratamiento": null,
+                    "id_subtipo_producto": 629,
+                    "id_tipo_tratamiento": null,
+                    "id_unidad_peso_neto": 55,
+                    "id_unidad_peso_bruto": null,
+                    "codigo_unidad_duracion": null,
+                    "codigo_tipo_tratamiento": null,
+                    "codigo_unidad_peso_neto": "KGM",
+                    "nombre_subtipo_producto": "Semilla pregerminada",
+                    "codigo_unidad_peso_bruto": null,
+                    "identificador_exportador": "1790036227001",
+                    "codigo_unidad_temperatura": null,
+                    "codigo_unidad_concentracion": null,
+                    "id_certificado_fitosanitario": 3310,
+                    "id_unidad_cantidad_comercial": 33,
+                    "codigo_unidad_cantidad_comercial": "BX",
+                    "id_total_inspeccion_fitosanitaria": 7538,
+                    "id_certificado_fitosanitario_producto": 3802
+                }
+            ],
+            "datos_operador": {
+                "nombre_operador": "MURRIN CORPORATION",
+                "direccion_operador": "AV. DEL RANCHO #110 URB. RANCHO SAN FRANCISCO",
+                "identificador_operador": "1790036227001"
+            }
+        }
+    }
+]

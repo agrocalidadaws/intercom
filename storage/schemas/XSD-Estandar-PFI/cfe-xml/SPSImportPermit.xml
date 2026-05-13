@@ -1,0 +1,137 @@
+<rsm:SPSImportPermit xmlns:ds="http://www.w3.org/2000/09/xmldsig#" 
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                    xmlns:rsm="urn:sgcan:intercom:data:standard:SPSImportPermit:1" 
+                    xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:21" 
+                    xmlns:ram="urn:sgcan:intercom:data:standard:INTERCOMSPSImportPermitReusableAggregateBusinessInformationEntity:1">
+    <rsm:SPSExchangedDocument>
+        <ram:ID>57223BO</ram:ID>
+        <ram:StatusCode>70</ram:StatusCode>
+        <ram:IssueDateTime>
+            <udt:DateTimeString>2001-12-17T09:30:47Z</udt:DateTimeString>
+        </ram:IssueDateTime>
+        <ram:EffectiveDateTime>
+            <udt:DateTimeString format="804">72</udt:DateTimeString>
+        </ram:EffectiveDateTime>
+        <ram:IssuerSPSParty>
+            <ram:Name>Fitosanitarios S.A.</ram:Name>
+            <ram:SpecifiedSPSPerson>
+                <ram:Name>Juan Pérez</ram:Name>
+            </ram:SpecifiedSPSPerson>
+        </ram:IssuerSPSParty>
+        <ram:IncludedSPSNote>
+            <ram:Subject>DMCL</ram:Subject>
+            <ram:Content>8888</ram:Content>
+        </ram:IncludedSPSNote>
+        <ram:ReferenceSPSReferencedDocument>
+            <ram:IssueDateTime>
+                <udt:DateTimeString>2001-12-17T09:30:47Z</udt:DateTimeString>
+            </ram:IssueDateTime>
+            <ram:TypeCode>2</ram:TypeCode>
+            <ram:ID>US</ram:ID>
+            <ram:AttachmentBinaryObject>UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</ram:AttachmentBinaryObject>
+            <ram:Information>1</ram:Information>
+        </ram:ReferenceSPSReferencedDocument>
+        <ram:SignatorySPSAuthentication>
+            <ram:IssueSPSLocation>
+                <ram:Name>Bogotá</ram:Name>
+            </ram:IssueSPSLocation>
+        </ram:SignatorySPSAuthentication>
+    </rsm:SPSExchangedDocument>
+    <rsm:SPSConsignment>
+        <ram:ConsigneeSPSParty>
+            <ram:Name>Importaciones López</ram:Name>
+            <ram:SpecifiedSPSAddress>
+                <ram:LineOne>Calle 123</ram:LineOne>
+                <ram:LineTwo>Colonia Centro</ram:LineTwo>
+                <ram:LineThree>Bogotá</ram:LineThree>
+                <ram:LineFour>Colombia</ram:LineFour>
+                <ram:LineFive>CP 110111</ram:LineFive>
+            </ram:SpecifiedSPSAddress>
+        </ram:ConsigneeSPSParty>
+        <ram:UtilizedSPSTransportEquipment>
+            <ram:AffixedSPSSeal>
+                <ram:ID>ABC123</ram:ID>
+            </ram:AffixedSPSSeal>
+        </ram:UtilizedSPSTransportEquipment>
+        <ram:ConsignorSPSParty>
+            <ram:Name>Exportaciones Rodríguez</ram:Name>
+            <ram:SpecifiedSPSAddress>
+                <ram:LineOne>Av. Principal</ram:LineOne>
+                <ram:LineTwo>Colonia Industrial</ram:LineTwo>
+                <ram:LineThree>Quito</ram:LineThree>
+                <ram:LineFour>Ecuador</ram:LineFour>
+                <ram:LineFive>CP 050505</ram:LineFive>
+            </ram:SpecifiedSPSAddress>
+        </ram:ConsignorSPSParty>
+        <ram:UnloadingBaseportSPSLocation>
+            <ram:ID>COBOG</ram:ID>
+            <ram:Name>Puerto de Bogotá</ram:Name>
+        </ram:UnloadingBaseportSPSLocation>
+        <ram:LoadingBaseportSPSLocation>
+            <ram:ID>QTEC</ram:ID>
+            <ram:Name>Puerto de Quito</ram:Name>
+        </ram:LoadingBaseportSPSLocation>
+        <ram:MainCarriageSPSTransportMovement>
+            <ram:ID>123ABC</ram:ID>
+            <ram:ModeCode>7</ram:ModeCode>
+            <ram:UsedSPSTransportMeans>
+                <ram:Name>AirCargoExpress</ram:Name>
+            </ram:UsedSPSTransportMeans>
+        </ram:MainCarriageSPSTransportMovement>
+        <ram:IncludedSPSConsignmentItem>
+            <ram:IncludedSPSTradeLineItem>
+                <ram:SequenceNumeric>0</ram:SequenceNumeric>
+                <ram:Description>Maíz Amarillo</ram:Description>
+                <ram:CommonName>Maíz</ram:CommonName>
+                <ram:ScientificName>Zea mays</ram:ScientificName>
+                <ram:IntendedUse>Alimentación Animal</ram:IntendedUse>
+                <ram:NetWeightMeasure>1000</ram:NetWeightMeasure>
+                <ram:GrossWeightMeasure>1050</ram:GrossWeightMeasure>
+                <ram:NetVolumeMeasure>10</ram:NetVolumeMeasure>
+                <ram:GrossVolumeMeasure>12</ram:GrossVolumeMeasure>
+                <ram:AdditionalInformationSPSNote>
+                    <ram:Subject>OPTND</ram:Subject>
+                    <ram:Content>100 Bags of 20 Cardboard Boxes</ram:Content>
+                </ram:AdditionalInformationSPSNote>
+                <ram:AdditionalInformationSPSNote>
+                    <ram:Subject>OQV</ram:Subject>
+                    <ram:Content>8</ram:Content>
+                </ram:AdditionalInformationSPSNote>
+                <ram:AdditionalInformationSPSNote>
+                    <ram:Subject>OQU</ram:Subject>
+                    <ram:Content>Packets</ram:Content>
+                </ram:AdditionalInformationSPSNote>
+                <ram:AdditionalInformationSPSNote>
+                    <ram:Content>Cumple con los requisitos fitosanitarios de importación</ram:Content>
+                </ram:AdditionalInformationSPSNote>
+                <ram:AdditionalInformationSPSNote>
+                    <ram:Content>Observaciones dentro del documento de importación</ram:Content>
+                </ram:AdditionalInformationSPSNote>
+                <ram:ApplicableSPSClassification>
+                    <ram:SystemName>HS</ram:SystemName>
+                    <ram:ClassCode>100590</ram:ClassCode>
+                </ram:ApplicableSPSClassification>
+                <ram:ApplicableSPSClassification>
+                    <ram:SystemName>IPPCPCVP</ram:SystemName>
+                    <ram:ClassName>Grains</ram:ClassName>
+                </ram:ApplicableSPSClassification>
+                <ram:ApplicableSPSClassification>
+                    <ram:SystemName>IPPCPCC</ram:SystemName>
+                    <ram:ClassName>Dry</ram:ClassName>
+                </ram:ApplicableSPSClassification>
+                <ram:PhysicalSPSPackage>
+                    <ram:LevelCode>0</ram:LevelCode>
+                    <ram:TypeCode>43</ram:TypeCode>
+                    <ram:ItemQuantity>100</ram:ItemQuantity>
+                </ram:PhysicalSPSPackage>
+                <ram:OriginSPSCountry>
+                    <ram:ID>EC</ram:ID>
+                    <ram:Name>Ecuador</ram:Name>
+                    <ram:SubordinateSPSCountrySubDivision>
+                        <ram:Name>Quito</ram:Name>
+                    </ram:SubordinateSPSCountrySubDivision>
+                </ram:OriginSPSCountry>
+            </ram:IncludedSPSTradeLineItem>
+        </ram:IncludedSPSConsignmentItem>
+    </rsm:SPSConsignment>
+</rsm:SPSImportPermit>

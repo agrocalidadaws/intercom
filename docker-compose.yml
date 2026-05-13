@@ -1,0 +1,102 @@
+services:
+    app_laravel:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: intercom_laravel
+        volumes:
+            - ./:/var/www/html
+            # - app_storage:/var/www/html/storage
+            # - app_cache:/var/www/html/bootstrap/cache
+        expose:
+            - "9000"
+        networks:
+            - intercom_network
+        restart: unless-stopped
+        depends_on:
+            - db
+
+    nginx:
+        image: nginx:1.27-alpine
+        container_name: intercom_nginx
+        depends_on:
+            - app_laravel
+        ports:
+            - "80:80"
+        volumes:
+            - ./:/var/www/html:ro
+            - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+        networks:
+            - intercom_network
+        restart: unless-stopped
+
+    db:
+        image: postgres:13
+        container_name: intercom_postgres
+        environment:
+            POSTGRES_USER: ${DB_USERNAME}
+            POSTGRES_PASSWORD: ${DB_PASSWORD}
+            POSTGRES_DB: ${DB_DATABASE}
+        ports:
+            - "9951:5432"
+        volumes:
+            - ./docker/volumes/db_data:/var/lib/postgresql/data
+        networks:
+            - intercom_network
+
+    redis:
+        image: redis:7-alpine
+        container_name: intercom_redis
+        ports:
+            - "9952:6379"
+        restart: unless-stopped
+        networks:
+            - intercom_network
+
+    queue:
+        # Usa el MISMO build que la app para asegurar mismas extensiones y vendor/
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: intercom_queue
+        working_dir: /var/www/html
+        depends_on:
+            db:
+                condition: service_started
+            app_laravel:
+                condition: service_started
+        env_file:
+            - .env
+        command: >
+            sh -lc "php artisan queue:work --queue=default --sleep=3 --tries=3 --timeout=${LARAVEL_QUEUE_TIMEOUT:-90}"
+        volumes:
+            - ./:/var/www/html
+        networks:
+            - intercom_network
+        restart: unless-stopped
+
+    scheduler:
+        build:
+            context: .
+        container_name: intercom_scheduler
+        working_dir: /var/www/html
+        env_file:
+            - .env
+        depends_on:
+            - app_laravel
+            - db
+            - redis
+        volumes:
+            - ./:/var/www/html
+        command: ["sh","-lc","php artisan schedule:work"]
+        restart: unless-stopped
+        networks:
+            - intercom_network
+
+# volumes:
+#   app_storage:
+#   app_cache:
+
+networks:
+  intercom_network:
+    driver: bridge

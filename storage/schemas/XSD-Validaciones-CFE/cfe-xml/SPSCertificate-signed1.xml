@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+<rsm:SPSCertificate xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rsm="urn:un:unece:uncefact:data:standard:SPSCertificate:17" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:21" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:21" xsi:schemaLocation="urn:un:unece:uncefact:data:standard:SPSCertificate:17 ../../Certificado%20fitosanitario%20de%20exportaci%C3%B3n/Certificado%20fitosanitario%20de%20exportaci%C3%B3n%20(XSD-Validaciones)/data/standard/SPSCertificate_17p0.xsd">
+					
+	<rsm:SPSExchangedDocument>
+		<ram:ID>123456789CO</ram:ID>
+		<ram:TypeCode>851</ram:TypeCode>		
+		<ram:StatusCode>70</ram:StatusCode>
+		<ram:IssueDateTime>
+			<udt:DateTimeString>2024-02-26T10:15:00Z</udt:DateTimeString>
+		</ram:IssueDateTime>
+		<ram:IssuerSPSParty>
+			<ram:Name>Fitosanitary Protection Organization</ram:Name>
+		</ram:IssuerSPSParty>
+		<ram:IncludedSPSNote>
+			<ram:Subject>SPSFL</ram:Subject>
+			<ram:Content>5</ram:Content>
+		</ram:IncludedSPSNote>
+		<ram:IncludedSPSNote>
+			<ram:Subject>ADEDL</ram:Subject>
+			<ram:Content>Phyllocnistiscitrella is absent in Colombia</ram:Content>
+		</ram:IncludedSPSNote>
+		<ram:IncludedSPSNote>
+			<ram:Subject>ADEDL</ram:Subject>
+			<ram:Content>The shipment was inspected and found free of Trogoderma variable.</ram:Content>
+		</ram:IncludedSPSNote>
+		<ram:IncludedSPSNote>
+			<ram:Subject>ADIPEDL</ram:Subject>
+			<ram:Content>DFGG1111</ram:Content>
+		</ram:IncludedSPSNote>
+		<ram:IncludedSPSNote>
+			<ram:Subject>ADDIEDL</ram:Subject>
+			<ram:Content>2024-02-26T10:15:00Z</ram:Content>
+		</ram:IncludedSPSNote>
+		<ram:IncludedSPSNote>
+			<ram:Subject>ADAOEDL</ram:Subject>
+			<ram:Content>The shipment was lab tested and found free of Agrilus planipennis</ram:Content>
+		</ram:IncludedSPSNote>
+		<ram:IncludedSPSNote>
+			<ram:Subject>ADRP</ram:Subject>
+			<ram:Content>4</ram:Content>
+		</ram:IncludedSPSNote>
+		<ram:IncludedSPSNote>
+			<ram:Subject>ADRPN</ram:Subject>
+			<ram:Content>3214356</ram:Content>
+		</ram:IncludedSPSNote>
+		<ram:IncludedSPSNote>
+			<ram:Subject>ADRPR</ram:Subject>
+			<ram:Content>Change in consignee</ram:Content>
+		</ram:IncludedSPSNote>
+		<ram:IncludedSPSNote>
+			<ram:Subject>ADRD</ram:Subject>
+			<ram:Content>2024-02-26T10:15:00Z</ram:Content>
+		</ram:IncludedSPSNote>
+		<ram:IncludedSPSNote>
+			<ram:Subject>DMCL</ram:Subject>
+			<ram:Content>Lot number:8888</ram:Content>
+		</ram:IncludedSPSNote>
+		<ram:ReferenceSPSReferencedDocument>
+            <ram:IssueDateTime>
+                <udt:DateTimeString>2024-02-26T10:15:00Z</udt:DateTimeString>
+            </ram:IssueDateTime>
+            <ram:RelationshipTypeCode>AAA</ram:RelationshipTypeCode>
+            <ram:ID>PC-UG-1234513467</ram:ID>
+            <ram:AttachmentBinaryObject>UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</ram:AttachmentBinaryObject>
+            <ram:Information>1</ram:Information>
+        </ram:ReferenceSPSReferencedDocument>
+		<ram:SignatorySPSAuthentication>
+			<ram:IssueSPSLocation>
+				<ram:Name>Bogota D.C</ram:Name>
+			</ram:IssueSPSLocation>
+			<ram:ProviderSPSParty>
+				<ram:SpecifiedSPSPerson>					
+					<ram:Name>John Doe</ram:Name>
+				</ram:SpecifiedSPSPerson>
+			</ram:ProviderSPSParty>
+			<ram:IncludedSPSClause>
+				<ram:ID>2</ram:ID>
+			</ram:IncludedSPSClause>
+		</ram:SignatorySPSAuthentication>
+	</rsm:SPSExchangedDocument>
+	<rsm:SPSConsignment>
+		<ram:ConsignorSPSParty>
+			<ram:Name>Exporter Corp.</ram:Name>
+			<ram:SpecifiedSPSAddress>
+				<ram:LineOne>123 Exporter Street</ram:LineOne>
+				<ram:LineTwo>Suite 101</ram:LineTwo>
+				<ram:LineThree>Exporter City</ram:LineThree>
+				<ram:LineFour>Exporter Country</ram:LineFour>
+				<ram:LineFive>Postal Code: 12345</ram:LineFive>
+			</ram:SpecifiedSPSAddress>
+		</ram:ConsignorSPSParty>
+		<ram:ConsigneeSPSParty>
+			<ram:Name>Importer LLC</ram:Name>
+			<ram:SpecifiedSPSAddress>
+				<ram:LineOne>456 Importer Street</ram:LineOne>
+				<ram:LineTwo>Unit 202</ram:LineTwo>
+				<ram:LineThree>Importer City</ram:LineThree>
+				<ram:LineFour>Importer Country</ram:LineFour>
+				<ram:LineFive>Postal Code: 54321</ram:LineFive>
+			</ram:SpecifiedSPSAddress>
+		</ram:ConsigneeSPSParty>
+		<ram:ExportSPSCountry>
+			<ram:ID>CO</ram:ID>
+		</ram:ExportSPSCountry>
+		<ram:ImportSPSCountry>
+			<ram:ID>PE</ram:ID>
+		</ram:ImportSPSCountry>
+		<ram:TransitSPSCountry>
+			<ram:ID>EC</ram:ID>
+		</ram:TransitSPSCountry>
+		<ram:UnloadingBaseportSPSLocation>
+			<ram:ID>PE</ram:ID>
+			<ram:Name>Lima</ram:Name>
+		</ram:UnloadingBaseportSPSLocation>
+		<ram:ExaminationSPSEvent>
+			<ram:OccurrenceSPSLocation>
+				<ram:Name>NULL</ram:Name>
+			</ram:OccurrenceSPSLocation>
+		</ram:ExaminationSPSEvent>
+		<ram:MainCarriageSPSTransportMovement>
+			<ram:ID>123ABC</ram:ID>
+			<ram:ModeCode>7</ram:ModeCode>
+			<ram:UsedSPSTransportMeans>
+				<ram:Name>Ocean Freight</ram:Name>
+			</ram:UsedSPSTransportMeans>
+		</ram:MainCarriageSPSTransportMovement>
+		<ram:UtilizedSPSTransportEquipment>
+			<ram:AffixedSPSSeal>
+				<ram:ID>123456789</ram:ID>
+			</ram:AffixedSPSSeal>
+		</ram:UtilizedSPSTransportEquipment>
+		<ram:IncludedSPSConsignmentItem>
+			<ram:IncludedSPSTradeLineItem>
+				<ram:SequenceNumeric>1</ram:SequenceNumeric>
+				<ram:Description>Widget A</ram:Description>
+				<ram:CommonName>Widget</ram:CommonName>
+				<ram:ScientificName>Widgeticus</ram:ScientificName>
+				<ram:IntendedUse>Animal Feed</ram:IntendedUse>
+				<ram:NetWeightMeasure>1000</ram:NetWeightMeasure>
+				<ram:GrossWeightMeasure>1050</ram:GrossWeightMeasure>
+				<ram:NetVolumeMeasure>10</ram:NetVolumeMeasure>
+				<ram:GrossVolumeMeasure>12</ram:GrossVolumeMeasure>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>OPTND</ram:Subject>
+					<ram:Content>100 Bags of 20 Cardboard Boxes</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>RPCST</ram:Subject>
+					<ram:Content>3</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>RPCCO</ram:Subject>
+					<ram:Content>BE</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>RPCRF</ram:Subject>
+					<ram:Content>677636</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>RPCOR</ram:Subject>
+					<ram:Content>false</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>RPCTC</ram:Subject>
+					<ram:Content>true</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>RPCPK</ram:Subject>
+					<ram:Content>true</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>RPCRP</ram:Subject>
+					<ram:Content>true</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>RPCOC</ram:Subject>
+					<ram:Content>true</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>RPCNC</ram:Subject>
+					<ram:Content>true</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>RPCPC</ram:Subject>
+					<ram:Content>true</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>RPCAI</ram:Subject>
+					<ram:Content>true</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>OQV</ram:Subject>
+					<ram:Content>8</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>OQU</ram:Subject>
+					<ram:Content>Packets</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>DMTLIL</ram:Subject>
+					<ram:Content>Lot number 8888</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>ADTLIL</ram:Subject>
+					<ram:Content>Phyllocnistis citrella is absent in Colombia</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>ADTLIL</ram:Subject>
+					<ram:Content>The shipment was inspected and found free of Trogoderma variable.</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>ADIPTLIL</ram:Subject>
+					<ram:Content>DFGG 1111</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>ADDITLIL</ram:Subject>
+					<ram:Content>2001-12-17T09:30:47Z</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:AdditionalInformationSPSNote>
+					<ram:Subject>ADAOTLIL</ram:Subject>
+					<ram:Content>The shipment was lab tested and found free of Agrilusplanipennis</ram:Content>
+				</ram:AdditionalInformationSPSNote>
+				<ram:ApplicableSPSClassification>
+					<ram:SystemName>HS</ram:SystemName>
+					<ram:ClassCode>100590</ram:ClassCode>
+				</ram:ApplicableSPSClassification>
+				<ram:ApplicableSPSClassification>
+					<ram:SystemName>IPPCPCVP</ram:SystemName>
+					<ram:ClassName>Grains</ram:ClassName>
+				</ram:ApplicableSPSClassification>
+				<ram:ApplicableSPSClassification>
+					<ram:SystemName>IPPCPCC</ram:SystemName>
+					<ram:ClassName>Dry</ram:ClassName>
+				</ram:ApplicableSPSClassification>
+				<ram:PhysicalSPSPackage>
+					<ram:LevelCode>0</ram:LevelCode>
+					<ram:TypeCode>43</ram:TypeCode>
+					<ram:ItemQuantity>1</ram:ItemQuantity>
+				</ram:PhysicalSPSPackage>
+				<ram:OriginSPSCountry>
+					<ram:ID>AI</ram:ID>
+					<ram:SubordinateSPSCountrySubDivision>
+						<ram:Name>!</ram:Name>
+					</ram:SubordinateSPSCountrySubDivision>
+				</ram:OriginSPSCountry>
+				<ram:AppliedSPSProcess>
+					<ram:TypeCode>ZZZ</ram:TypeCode>
+					<ram:CompletionSPSPeriod>
+						<ram:StartDateTime>
+							<udt:DateTimeString>2001-12-17T09:30:47Z</udt:DateTimeString>
+						</ram:StartDateTime>
+						<ram:EndDateTime>
+							<udt:DateTimeString>2001-12-17T09:30:47Z</udt:DateTimeString>
+						</ram:EndDateTime>
+						<ram:DurationMeasure unitCode="HUR">3</ram:DurationMeasure>
+					</ram:CompletionSPSPeriod>
+					<ram:ApplicableSPSProcessCharacteristic>
+						<ram:Description>TTL1</ram:Description>
+						<ram:Description>CHT</ram:Description>
+					</ram:ApplicableSPSProcessCharacteristic>
+					<ram:ApplicableSPSProcessCharacteristic>
+						<ram:Description>TTL2</ram:Description>
+						<ram:Description>OP</ram:Description>
+					</ram:ApplicableSPSProcessCharacteristic>
+					<ram:ApplicableSPSProcessCharacteristic>
+						<ram:Description>TTCH</ram:Description>
+						<ram:Description>238</ram:Description>
+					</ram:ApplicableSPSProcessCharacteristic>
+					<ram:ApplicableSPSProcessCharacteristic>
+						<ram:Description>TTTM</ram:Description>
+						<ram:ValueMeasure unitCode="CEL">32.0000</ram:ValueMeasure>
+					</ram:ApplicableSPSProcessCharacteristic>
+					<ram:ApplicableSPSProcessCharacteristic>
+						<ram:Description>TTCO</ram:Description>
+						<ram:ValueMeasure unitCode="KX">2.5</ram:ValueMeasure>
+					</ram:ApplicableSPSProcessCharacteristic>
+					<ram:ApplicableSPSProcessCharacteristic>
+						<ram:Description>TTAI</ram:Description>
+						<ram:Description>No AdditionalInformation available</ram:Description>
+					</ram:ApplicableSPSProcessCharacteristic>
+					<ram:ApplicableSPSProcessCharacteristic>
+						<ram:Description>TTFT</ram:Description>
+						<ram:Description>Date: 2011-11-30;Type:Chemical; Duration: 3 h; Temperature: 32 C; Concentration: 2.5 ml/kg; AdditionalInfomation: Noadditional Information available</ram:Description>
+					</ram:ApplicableSPSProcessCharacteristic>
+				</ram:AppliedSPSProcess>
+			</ram:IncludedSPSTradeLineItem>
+		</ram:IncludedSPSConsignmentItem>
+	</rsm:SPSConsignment>
+<ds:Signature>
+  <ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+    <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+  <ds:Reference><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>CiYH3Oz++IP5JOpFe/UcHGkRYXuEFVtPMlw85S71nyk=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>Ug2hCClmDk1trnhUrVnNArQYjcle27OlMK04JcJlU6LH2YdcBy8Q7ohN8uBVqRflJKEU5gXaIqmonvf0Vx4Y47ujdIOxcMW/9ZNFGn0RuL3GAwKQrUdN/xNJI+mXpNOBHK+E5Pa+Pp/f7aoPpfUjfLjP2q1S7Dgi8CuezI4tQRX16AQdFzfOORZBvBjgONBnonR1/5WDPg7vIZUWUHcGVSa0fwbt1ZLRwfyhsU/2PoeY0K+ntleKkQqHPXOwqs0v1/DfkKj4ejf8Ppo7itBzOgILcd/4TX4NtvxPMtP/OXWb1bD5w7B4h90ocsXQX8fd2NRRvH+GNhUyCqjh8JWm5A==</ds:SignatureValue>
+<ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIID9zCCAt+gAwIBAgIUOk3LM9mcvnaTOGwYcsx39MUPQUMwDQYJKoZIhvcNAQELBQAwgaMxCzAJBgNVBAYTAkVDMRIwEAYDVQQIDAlHVWF5YXF1aWwxDjAMBgNVBAcMBXF1aXRvMRwwGgYDVQQKDBNBZ3JvY2FsaWRhZCBFY3VhZG9yMRQwEgYDVQQLDAtBZ3JvY2FsaWRhZDEUMBIGA1UEAwwLQWdyb2NhbGlkYWQxJjAkBgkqhkiG9w0BCQEWF2Fncm9jYWxpZGFkQG1haWwuZ29iLmVjMB4XDTI0MDgxOTIwMTgxOFoXDTI1MDgxOTIwMTgxOFowgaMxCzAJBgNVBAYTAkVDMRIwEAYDVQQIDAlHVWF5YXF1aWwxDjAMBgNVBAcMBXF1aXRvMRwwGgYDVQQKDBNBZ3JvY2FsaWRhZCBFY3VhZG9yMRQwEgYDVQQLDAtBZ3JvY2FsaWRhZDEUMBIGA1UEAwwLQWdyb2NhbGlkYWQxJjAkBgkqhkiG9w0BCQEWF2Fncm9jYWxpZGFkQG1haWwuZ29iLmVjMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnHQOY3uRJjOUZL0gPtRZCoG9QXJL62p3C/QEI95WMGZOekTrlakNSC2fWifikuKOcqc9+kjxE/RkY0sG1So5z/UOAVTklatgVoeXni+FsuZ5u3hNBUNtD5zC4myrtbMEscVNFrPR5r4xfNpuw6UcOUIkPcYKmqJ0yJZMsEbXgfotVgWVC9eUGZC8vgUhYha7L41AO/XwDzy2lTPNHj+76fhaRUqu9mGbVm5d1hNf2qmJV2uEzkmgOBnPKTQpEaDb91jPnR77xY7TgzqV3xuZoEUfZRdbd1qbK2PARTykKD8FBzg26cP1vTGTnETuNOcz9QDP9xx7eJfcdjpSlqPH0QIDAQABoyEwHzAdBgNVHQ4EFgQUYJD3msz5rAU5nAaSqn/ADEAOnc8wDQYJKoZIhvcNAQELBQADggEBAG88TWRTTMH68UmZK5kovm3jKxPPfs+WFcCNVfFJL0sUr8nJlBaOx88XF7NrBLum5nLx7EUPT+rOQbzDhZwSAfHhQ5LvJmo0RSOQHv8kBmKP9Vj4RbDvUwXvFamr/UQOo06k8JO4BeQr1x+K9kVLKrohT1AXaopTtUFLrMuJ6NZlT67euuS6hi2idE7mGWKRNa5+bkt6NZqn7RCiqg065dqJcIWqeZYciWCpU6/Tfr+GHklub+vSM8eNSKhv8I5ylBaVUWM2RE8iZ7KOFRPc3CZwc24USiW6JYNLOE+gYIEueehGfL8SZ1HZg/v/eD8/jG0w6KSbChbxrqhtyu6wWXk=</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature></rsm:SPSCertificate>

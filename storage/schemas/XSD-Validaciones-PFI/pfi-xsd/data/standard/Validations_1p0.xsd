@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+            xmlns:vld="urn:sgcan:intercom:data:standard:Validations:1" 
+            xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" 
+            targetNamespace="urn:sgcan:intercom:data:standard:Validations:1" version="1.0">
+
+<!-- ================================================================== -->
+<!-- ===== Type Definitions                                       ===== -->
+<!-- ================================================================== -->
+<!-- ===== Type Definition: AmountType                            ===== -->
+<!-- ================================================================== -->
+
+
+
+<xsd:complexType name="Restrictions">
+  <xsd:sequence>
+    <xsd:element name="rule">
+      <xsd:complexType> 
+        <xsd:attribute name="parent" type="xsd:string"/>
+        <xsd:attribute name="parentValue" type="xsd:string"/>
+        <xsd:attribute name="childType" type="xsd:string"/>
+        <xsd:attribute name="childMaxLength" type="xsd:string"/>
+        <xsd:attribute name="childTotalDigits" type="xsd:integer"/>
+        <xsd:attribute name="childDateTime" type="xsd:dateTime"/>
+        <xsd:attribute name="childBoolean" type="xsd:boolean"/>
+        <xsd:attribute name="childFractionDigits" type="xsd:decimal"/>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:sequence>
+</xsd:complexType>
+
+
+
+</xsd:schema>

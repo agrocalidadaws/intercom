@@ -88,7 +88,7 @@ class CertificateAdapter
                 $prodObj->Description = 'Ninguno';
                 $prodObj->CommonName = htmlspecialchars(trim($dbProduct->nombre_comun), ENT_XML1 | ENT_QUOTES, 'UTF-8');
                 $prodObj->ScientificName = htmlspecialchars(trim($dbProduct->nombre_cientifico), ENT_XML1 | ENT_QUOTES, 'UTF-8');
-                $prodObj->IntendedUse = 'Ninguno';
+                $prodObj->IntendedUse = htmlspecialchars(trim($data->uso_previsto ?? 'N/A'), ENT_XML1 | ENT_QUOTES, 'UTF-8');
                 $prodObj->NetWeightMeasure = $product->peso_neto == null ? 1 : $product->peso_neto;
                 $prodObj->GrossWeightMeasure = $product->peso_neto == null ? 1 : $product->peso_neto;
                 $prodObj->NetVolumeMeasure = $product->peso_neto == null ? 1 : $product->peso_neto;

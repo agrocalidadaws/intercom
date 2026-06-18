@@ -99,6 +99,7 @@ class AgrocalidadDBCFERepository implements AgrocalidadCFERepository
 					cf_pais_des.nombre_pais_destino ,
 					cf_pais_des.id_puerto_destino ,
 					cf_pais_des.nombre_puerto_destino,
+					COALESCE(uso_previsto.nombre_uso_previsto_ingles, 'N/A') AS uso_previsto,
 					lo.nombre as nombre_pais_destino,
 					lo.codigo as codigo_pais_detino,
 					fe.apellido ||' '||fe.nombre as nombre,
@@ -122,6 +123,8 @@ class AgrocalidadDBCFERepository implements AgrocalidadCFERepository
 					ON fe.identificador = dc.identificador
 					INNER JOIN   g_catalogos.localizacion lopo
 					ON cf.id_pais_origen=lopo.id_localizacion
+					LEFT JOIN g_catalogos.uso_previsto uso_previsto
+					ON cf.id_uso_previsto = uso_previsto.id_uso_previsto
 					INNER JOIN g_certificado_fitosanitario.paises_puertos_destino cf_pue_destin
 					ON cf.id_certificado_fitosanitario=cf_pue_destin.id_certificado_fitosanitario
 				WHERE
@@ -286,6 +289,7 @@ SQL;
 					cf_pais_des.nombre_pais_destino ,
 					cf_pais_des.id_puerto_destino ,
 					cf_pais_des.nombre_puerto_destino,
+					COALESCE(uso_previsto.nombre_uso_previsto_ingles, 'N/A') AS uso_previsto,
 					lo.nombre as nombre_pais_destino,
 					lo.codigo as codigo_pais_detino,
 					fe.apellido ||' '||fe.nombre as nombre,
@@ -309,6 +313,8 @@ SQL;
 					ON fe.identificador = dc.identificador
 					INNER JOIN   g_catalogos.localizacion lopo
 					ON cf.id_pais_origen=lopo.id_localizacion
+					LEFT JOIN g_catalogos.uso_previsto uso_previsto
+					ON cf.id_uso_previsto = uso_previsto.id_uso_previsto
 					INNER JOIN g_certificado_fitosanitario.paises_puertos_destino cf_pue_destin
 					ON cf.id_certificado_fitosanitario=cf_pue_destin.id_certificado_fitosanitario
 				WHERE

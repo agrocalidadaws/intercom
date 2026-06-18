@@ -3,7 +3,6 @@
 namespace Modules\Intercom\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use GuzzleHttp\Client as HttpClient;
 use Laravel\Passport\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
@@ -32,10 +31,9 @@ class LoginController extends Controller
             'client_secret' => 'string',
         ]);
 
-        $http = new HttpClient;
         $oauthClient = Client::where('password_client', true)->first();
 
-        $tokenUrl = 'http://nginx/api/oauth/token';
+        $tokenUrl = config('services.passport.token_url');
 
         try {
             $response = Http::asForm()->post($tokenUrl, [

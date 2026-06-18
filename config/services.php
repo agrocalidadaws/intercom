@@ -38,7 +38,10 @@ return [
     'passport' => [
         'client_id' => env('PASSPORT_PASSWORD_CLIENT_ID'),
         'client_secret' => env('PASSPORT_PASSWORD_CLIENT_SECRET'),
-        'token_url' => env('PASSPORT_TOKEN_URL', 'http://nginx/api/oauth/token'),
+        'token_url' => env(
+            'PASSPORT_TOKEN_URL',
+            rtrim(env('APP_URL', 'http://localhost'), '/') . '/api/oauth/token'
+        ),
     ],
 
 ];
